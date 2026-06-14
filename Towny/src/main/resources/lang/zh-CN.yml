@@ -256,7 +256,7 @@ world_toggle_help_8: "打开/关闭这个世界中的不可恢复功能"
 world_toggle_help_9: "切换此世界是否启用爆炸恢复功能。"
 world_toggle_help_10: "打开/关闭 这个世界的区块清除后删除方块指令"
 world_toggle_help_11: "打开/关闭这个世界中的区块-无索赔-删除-块功能。"
-world_toggle_help_12: "切换此世界是否启用对好友的战斗状态。"
+world_toggle_help_12: "切换此世界是否启用入狱功能。"
 townyadmin_help_1: '放弃声明这个城镇区块'
 townyadmin_help_2: '放弃声明你附近的城镇区块.'
 admin_panel_1: "查看/ta set ?以获得帮助。"
@@ -437,7 +437,7 @@ msg_plot_fs_radius: '出售你输入的半径的地皮'
 #+------------------------------------------------------+ #
 ############################################################
 msg_buy: '&b你花费%3$s购买了%1$d个%2$s。'
-msg_buy_resident_plot: '&b%1$s花费%$3s购买了%$2s的土地！'
+msg_buy_resident_plot: '&b%1$s花费%3$s购买了%2$s的地块！'
 msg_buy_resident_plot_group: '&b%s为%s购买了%s的区块。'
 msg_couldnt_pay_taxes: '&b%s 因为交不起税而被踢出了 %s.'
 msg_couldnt_pay_plot_taxes: '&b%s 交不起税而失去了他的土地所有权.'
@@ -698,13 +698,13 @@ list_err_not_enough_pages: '&c只有 %s 页可用'
 msg_err_tax_minimum_not_met: '你设置的城镇税不能低于 %s.'
 msg_unknown_rank_available_ranks: '未知头衔 %s. 可用的头衔有 %s.'
 msg_no_permission_to_give_rank: '你没有足够的权限来授予这个头衔.'
-msg_you_have_been_given_rank: '你被授予了 %s 的头衔.'
+msg_you_have_been_given_rank: '你被授予了%2$s的%1$s职位。'
 msg_you_have_given_rank: '你给 %3$s 授予了%1$s头衔 %2$s。'
 msg_resident_not_your_town: '那个居民不是你的城镇的人!'
 msg_resident_already_has_rank: '%s 已经拥有 %s 这个头衔了.'
 msg_town_or_nation_level_not_high_enough_for_this_rank: "您的 %s 级别不足以分配 %s 级别。您的 %s级别：需要 %s/%s"
 msg_rank_can_only_be_assigned_x_times: "您不能将 %s 的等级分配给 %s ，因为它只能分配给 %s 次。您的 %s 已经使用它了 %s 次。"
-msg_you_have_had_rank_taken: '你失去了 %s 头衔.'
+msg_you_have_had_rank_taken: '你被撤销了%2$s的%1$s职位。'
 msg_you_have_taken_rank_from: '你移除了 %s 头衔 %s 从 %s.'
 msg_resident_doesnt_have_rank: '%s 没有 %s 这个头衔.'
 msg_town_has_no_jails: '城镇没有设置任何监狱.'
@@ -1216,7 +1216,7 @@ msg_you: '你'
 msg_click_town_info: '<green>点击查看城镇状态屏幕。'
 msg_click_nation_info: '<green>点击查看国家状态屏幕。'
 msg_click_spawn: '&a点击传送到:&e%s'
-msg_click_spawn_brief: '<green>[Spawn]'
+msg_click_spawn_brief: '<green>[传送]'
 msg_spawn_cost: '&a传送价格=&e%s'
 #Added in 0.78
 msg_reload_error: '重载Towny时出错.'
@@ -2008,8 +2008,8 @@ msg_err_you_cannot_over_claim_would_cut_into_two: "你不能接管这个区块�
 msg_err_that_town_is_not_conquered: "%s 已经不在处于被征服状态。"
 #Message shown when a town has its conquered status removed by an admin.
 msg_conquered_status_removed: "%s 的被征服状态已被取消。"
-msg_setup_command_folia: "由于对话API不工作，“/ta install”命令当前在Folia上不起作用，因此请参阅下面的安装指南。"
-msg_perm_gui_folia: "由于交互API没有工作，使这个按钮当前在Folia上不工作。请使用 /plot perm add <name> 指令来代替它。"
+msg_setup_command_folia: "由于对话 API 无法正常工作，Folia 目前无法使用 /ta install 命令。请改看下方安装指南。"
+msg_perm_gui_folia: "由于对话 API 无法正常工作，此按钮目前无法在 Folia 使用。请改用 /plot perm add [名称] 命令。"
 msg_folia_scoreboard: "目前不支持在Folia的服务端上更改计分板。"
 #Message shown when a player cannot unclaim land because at least one plot wouldn't have enough adjacent claims.
 msg_err_cannot_unclaim_not_enough_adjacent_claims: "您不能取消声明这个城镇区块，因为它位于%s，且%s将没有足够的相邻的区块（必须有%s。）"
@@ -2125,10 +2125,10 @@ msg_town_cede_plot_unable_to_accept: "%s 无法接受您的报价。"
 msg_town_cede_plot_you_have_accepted: "你已经在 %s 获得了对地皮的控制。"
 msg_err_cannot_claim_plot_join_date_too_low: "你不能拥有这块地皮，直到你已经成为一个城镇居民了 %s 天。"
 msg_err_cannot_claim_plot_join_date_too_high: "你不能领取这块地皮，它是给城镇成员少于 %s 天的居民。"
-msg_townblock_min_join_days_removed: "此 TownBlock 已经删除了它的最小加入日要求。"
-msg_townblock_max_join_days_removed: "此 TownBlock 已经删除了其最大加入日要求。"
-msg_townblock_min_join_days_set_to: "此 TownBlock 已将其最小加入日要求设置为 %s。 只有加入的玩家超过了这个天数，才能使用 /绘图认领。"
-msg_townblock_max_join_days_set_to: "此 TownBlock 已将其最大加入日要求设置为 %s。 只有加入的玩家少于这个天数，才能使用 /绘图认领。"
+msg_townblock_min_join_days_removed: '此城镇区块已移除最短加入天数要求。'
+msg_townblock_max_join_days_removed: '此城镇区块已移除最长加入天数要求。'
+msg_townblock_min_join_days_set_to: '此城镇区块已将最短加入天数要求设为 %s。只有加入城镇超过该天数的居民才能使用 /plot claim。'
+msg_townblock_max_join_days_set_to: '此城镇区块已将最长加入天数要求设为 %s。只有加入城镇少于该天数的居民才能使用 /plot claim。'
 msg_new_resident_spawn_to_town_prompt: "你想传送到你刚刚加入的城镇吗？"
 msg_recieved_refund_for_deleted_object: "您收到了您已删除的城镇或民族的银行余额，金额为 %s。"
 msg_err_you_already_own_this_plot: "你已经拥有这个区块。"
@@ -2171,7 +2171,7 @@ msg_err_you_cannot_add_trust_on_enemy: "你不能信任一个属于敌国的玩�
 msg_err_you_cannot_add_towntrust_on_outlaw: "你不能信任一个有你们镇上被禁止的居民的城镇"
 msg_err_you_cannot_add_towntrust_on_enemy: "你不能信任一个属于敌国的城镇。"
 status_world_jailing: "处于监禁中的人员: "
-msg_version_build_info: "<dark_green>构建信息： <green>%s</green> 分支 <green>%s<green>。"
+msg_version_build_info: "<dark_green>构建信息：提交 <green>%s</green>，分支 <green>%s</green>。"
 msg_version_build_info_failed: "<red>无法获取此版本的构建信息。"
 time-future: "以后"
 time-just-now: "刚刚"
@@ -2199,3 +2199,85 @@ msg_nation_level_overridden_with: '国家 %s 已将其国家级别设置为 %s�
 msg_nation_level_unset: '国家 %s 取消了其手动设定的国家级别。当前国家级别为 %s。'
 msg_err_cannot_merge_x_seconds_remaining: '你需要等待%s秒才能再次请求与%s合并。'
 msg_towny_prices_percentage_capped_at: "，最多%s"
+
+# Eartopia completion additions
+# Added to keep this locale complete against en-US.yml.
+name: 'Towny'
+author: 'TownyAdvanced contributors, Eartopia'
+description: '此 Locale 下所有游戏消息的语言文件。'
+default_town_prefix: '&6[%s] &b'
+default_nation_prefix: '&6[%s] &6'
+msg_you_lost_money_dying_with_town_loss: '您丢失了%s，您的城镇也丢失了%s。'
+msg_you_lost_money_dying_with_nation_loss: '您失去了%s，您的国家也失去了%s。'
+msg_you_lost_money_dying_with_town_and_nation_loss: '您丢失了%s，您的城镇丢失了%s，您的国家丢失了%s。'
+msg_your_town_lost_money_dying_and_nation_loss: '您的城镇失去了%s，您的国家失去了%s。'
+res_format_list_1: '&2'
+res_format_list_2: '&a'
+res_format_list_3: '&f'
+townboard_message_colour_1: '&6'
+townboard_message_colour_2: '&e'
+nationboard_message_colour_1: '&6'
+nationboard_message_colour_2: '&e'
+msg_universe_heart: '<3'
+towny_prices_overclaimed_based_on: '&7超额维护基于 &a%s%s'
+flatfile_dbg_cannot_set_capital_try_next: '国家%s 无法将资本设置为%s，正在选择新资本...'
+flatfile_dbg_deleting_duplicate: '删除：%s，它是%s 的重复项'
+flatfile_dbg_folders_found: '找到文件夹%s'
+flatfile_dbg_group_file_missing_town_delete: '群组文件缺失城镇，删除%s'
+flatfile_dbg_loading_group_list: '正在加载组列表...'
+flatfile_dbg_loading_nation: '加载国家：%s'
+flatfile_dbg_loading_nation_list: '正在加载国家列表...'
+flatfile_dbg_loading_resident: '正在加载居民：%s'
+flatfile_dbg_loading_resident_list: '正在加载居民名单...'
+flatfile_dbg_loading_server_world_list: '正在加载服务器世界列表...'
+flatfile_dbg_loading_town: '加载城镇：%s'
+flatfile_dbg_loading_town_list: '正在加载城镇列表...'
+flatfile_dbg_loading_townblock_list: '正在加载城镇街区列表...'
+flatfile_dbg_loading_world: '加载世界：%s'
+flatfile_dbg_loading_world_list: '正在加载世界列表...'
+flatfile_dbg_mismatched_townblock_size: '发现%s 城镇区块的town_block_size 与您的配置不匹配，它们未加载到内存中。'
+flatfile_dbg_missing_file_delete_group_entry: '丢失文件：%s 正在删除 group.txt 中的条目'
+flatfile_dbg_missing_file_delete_groups_entry: '丢失文件：%s 正在删除 groups.txt 中的条目'
+flatfile_dbg_removing_nation_not_found: '删除%s，因为在 nation.txt 中找不到它们'
+flatfile_dbg_removing_resident_not_found: '删除%s，因为在residents.txt中找不到它们'
+flatfile_dbg_removing_town_not_found: '删除%s，因为在 Towns.txt 中找不到它们。'
+flatfile_dbg_town_fetch_outlaw: '城镇夺取亡命之徒：%s'
+flatfile_dbg_undefined_capital_select_new: '国家%s 没有定义首都，正在选择新首都...'
+flatfile_dbg_world_loaded_townblocks: '世界：%s 已加载 %s 个城镇区块。'
+flatfile_err_cannot_create_defaults: '无法创建平面文件默认文件和文件夹。'
+flatfile_err_could_not_add_to_town: '无法添加到城镇！'
+flatfile_err_exception_reading_file: '加载错误：读取文件%s 时出现异常'
+flatfile_err_exception_reading_group_file_at_line: '加载错误：读取组文件%s 行：%s 时出现异常'
+flatfile_err_exception_reading_townblock_file_at_line: '加载错误：读取城镇区块文件 %s 的第 %s 行时出现异常。'
+flatfile_err_exception_reading_world_file_at_line: '加载错误：在towny/data/worlds/%s.txt中的行：%s处读取世界文件%s时出现异常'
+flatfile_err_file_error_reading_world_file_at_line: '加载错误：在 Towny/data/worlds/%s.txt 中的%s 行读取%s 时出现文件错误'
+flatfile_err_homeblock_load_invalid_location: '[Warning]%s - HomeBlock 尝试加载无效位置。'
+flatfile_err_homeblock_load_invalid_townblock: '[Warning]%s - HomeBlock 尝试加载无效的城镇区块。'
+flatfile_err_homeblock_load_invalid_world: '[Warning]%s - HomeBlock 尝试加载无效的世界。'
+flatfile_err_invalid_townblock_resident: '城镇区块 %s 的居民无效。已跳过该城镇区块的居民设置...'
+flatfile_err_loading_group_list_at_line: '在 Towny/data/groups.txt 中的%s 加载组列表时出错'
+flatfile_err_loading_world_list_at_line: '在 Towny/data/worlds.txt 中加载%s 的世界列表时出错'
+flatfile_err_nation_could_not_load_capital_disband: '国家%s 无法加载首都，正在解散。'
+flatfile_err_reading_nation_file_at_line: '加载错误：在towny/data/nations/%s.txt中的%s行读取国家文件%s时出现异常'
+flatfile_err_reading_outlaw_of_town_duplicate: '加载错误：读取亡命之徒文件%s.txt 时出现异常。不法之徒%s 被复制！跳过添加重复项...'
+flatfile_err_reading_outlaw_of_town_not_exist: '加载错误：读取亡命之徒文件%s.txt 时出现异常。不法之徒%s 不存在！正在从列表中删除...'
+flatfile_err_reading_resident_at_line: '加载错误：在 Towny/data/residents/%s.txt 中的行：%s 处读取常驻文件%s 时出现异常'
+flatfile_err_reading_town_file_at_line: '加载错误：在 Towny/data/towns/%s.txt 中的行：%s 处读取城镇文件%s 时出现异常'
+flatfile_err_resident_tried_load_invalid_town: '加载错误：%s 尝试加载无效的城镇%s。将城镇从居民中移除。'
+flatfile_err_town_homeblock_not_exist: '[Warning]%s 没有 HomeBlock。'
+flatfile_err_townblock_file_contains_unregistered_town_delete: '城镇区块文件包含未注册的城镇：%s，正在删除 %s。'
+flatfile_err_townblock_file_missing_town_delete: '城镇区块文件缺少城镇，正在删除 %s。'
+flatfile_err_townblock_file_unknown_err: '城镇区块文件包含未知错误，正在删除 %s。'
+status_title_primary_colour: '&6'
+status_title_secondary_colour: '&e'
+status_format_list_1: '&2'
+status_format_list_2: '&a'
+status_format_list_3: '&f'
+status_format_key_value_key: '&2'
+status_format_key_value_value: '&a'
+status_format_bracket_element: '&b'
+status_format_hover_key: '&a'
+status_format_hover_bracket_colour: '&7'
+status_format_key_important: '&c'
+status_splitter: ' &7| '
+msg_err_cannot_unclaim_outpost_with_adjacent_claims: '您无法收回拥有任何附属城镇街区的前哨站。'

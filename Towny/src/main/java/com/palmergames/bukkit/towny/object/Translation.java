@@ -6,6 +6,7 @@ import com.palmergames.bukkit.towny.TownySettings;
 import com.palmergames.bukkit.towny.TownyUniverse;
 import com.palmergames.bukkit.towny.command.HelpMenu;
 import com.palmergames.bukkit.towny.event.TranslationLoadEvent;
+import com.palmergames.bukkit.towny.hooks.EartopiaI18nLocaleBridge;
 import com.palmergames.bukkit.util.BukkitTools;
 import com.palmergames.bukkit.util.Colors;
 import com.palmergames.util.JavaUtil;
@@ -228,7 +229,7 @@ public final class Translation {
 	}
 	
 	public static Locale getLocale(CommandSender sender) {
-		return sender instanceof Player player ? player.locale() : defaultLocale;
+		return sender instanceof Player player ? EartopiaI18nLocaleBridge.getLocale(player, defaultLocale) : defaultLocale;
 	}
 	
 	// Named differently than getLocale on purpose

@@ -11,9 +11,9 @@ help_0: 'Trợ giúp Towny'
 help_1: 'Sử dụng lệnh sau để tìm hiểu thêm về lệnh Towny.'
 help_2: 'Chat làng'
 help_3: 'Chat lãnh thổ'
-help_4: 'Resident command help.'
+help_4: 'Trợ giúp lệnh cư dân.'
 help_5: 'Hướng Dẫn Lệnh Thành.'
-help_6: 'Resident command help.'
+help_6: 'Trợ giúp lệnh quốc gia.'
 help_7: 'Hướng Dẫn Lệnh Mảnh Đất.'
 help_8: 'Hướng Dẫn Lệnh Quốc Gia.'
 help_9: 'Lệnh Admin Towny.'
@@ -90,7 +90,7 @@ town_jail_help_7: "Bỏ tù một cư dân trong nhà tù chính, trong số gi�
 town_jail_help_8: "Thả Tù cư dân."
 town_purge_help: "Xóa những cư dân chưa đăng nhập trong số ngày nhất định."
 town_trust_help_0: "Thêm một cư dân là Người đáng tin cậy trong thị trấn."
-town_trust_help_1: "Removes a resident as Trusted in the town."
+town_trust_help_1: 'Gỡ một cư dân khỏi danh sách tin cậy của thị trấn.'
 town_trust_help_2: "Liệt kê các cư dân đáng tin cậy của một thị trấn."
 town_towntrust_help_0: "Thêm một thị trấn là đáng tin cậy trong thị trấn."
 town_towntrust_help_1: "Loại bỏ một thị trấn là đáng tin cậy trong thị trấn."
@@ -143,8 +143,8 @@ nation_toggle_help_0: "Chuyển đổi trạng thái hòa bình của đất nư
 nation_toggle_help_1: "Chuyển đổi trạng thái công khai, cho phép những người không cư trú sử dụng /n spawn."
 nation_toggle_help_2: "Chuyển đổi trạng thái mở, cho phép các thị trấn tham gia mà không cần lời mời."
 nation_toggle_help_3: "Chuyển đổi phần trăm thuế, khiến các thị trấn phải trả phần trăm thay vì tỷ lệ cố định."
-nation_sanction_help_1: "Thêm một thị trấn vào danh sách SanctionedTown."
-nation_sanction_help_2: "Xóa một thị trấn khỏi danh sách SanctionedTown."
+nation_sanction_help_1: 'Thêm một thị trấn vào danh sách thị trấn bị chế tài.'
+nation_sanction_help_2: 'Gỡ một thị trấn khỏi danh sách thị trấn bị chế tài.'
 nation_sanction_help_3: "Liệt kê các Làng bị trừng phạt của Bộ tộc bạn."
 nation_sanction_help_4: "Liệt kê các thị trấn bị trừng phạt của quốc gia nhất định."
 king_help_1: 'Trợ giúp dành cho lãnh đạo quốc gia'
@@ -225,7 +225,7 @@ world_toggle_help_8: "Bật/tắt tính năng hoàn nguyên khi không xác nh�
 world_toggle_help_9: "Bật/tắt các tính năng hoàn nguyên về vụ nổ trong thế giới này."
 world_toggle_help_10: "Bật/tắt lệnh cốt truyện rõ ràng-xóa-khối trong thế giới này."
 world_toggle_help_11: "Bật/tắt tính năng không xác nhận cốt truyện-xóa-khối trong thế giới này."
-world_toggle_help_12: "Bật/tắt nếu tính năng bắn thân thiện được bật trong thế giới này."
+world_toggle_help_12: "Bật/tắt việc cho phép bỏ tù trong thế giới này."
 townyadmin_help_1: 'Hủy xác nhận quyền sở hữu mảnh đất này'
 townyadmin_help_2: 'Huỷ sở hữu đất xung quanh bạn.'
 admin_panel_1: ""
@@ -263,7 +263,7 @@ townyadmin_town_help_15: "Mở cuốn sách lịch sử ngân hàng của thị 
 townyadmin_town_help_16: "Thay đổi những kẻ sống ngoài vòng pháp luật của thị trấn."
 townyadmin_town_help_17: "Khiến thị trấn rời khỏi đất nước của họ."
 townyadmin_town_help_18: "Xóa bỏ trạng thái bị chinh phục của thị trấn."
-townyadmin_town_toggle_help_0: "Toggle the Town's PVP."
+townyadmin_town_toggle_help_0: 'Bật/tắt PvP của thị trấn.'
 townyadmin_town_toggle_help_1: "Bật/tắt chế độ bắt buộc PVP, không cho phép các thị trưởng tắt chúng đi."
 townyadmin_town_toggle_help_2: "Bật/tắt chế độ Công khai cho town, cho phép các người chơi không thuộc town dịch chuyển đến."
 townyadmin_town_toggle_help_3: "Bật/tắt chế độ cho phép gây nổ trong town."
@@ -446,7 +446,7 @@ msg_nation_kicked_by: '&bThị trấn của bạn đã bị đuổi khỏi quố
 msg_town_left_nation: '&bThị trấn của bạn đã rời quốc gia %s.'
 msg_nation_town_left: '&bThị trấn %s đã rời khỏi quốc gia của bạn.'
 msg_nation_kicked: '&b%s đã đuổi %s khỏi quốc gia.'
-msg_nation_you_kicked: '&b%s đã đuổi %s khỏi quốc gia.'
+msg_nation_you_kicked: '&bBạn đã khai trừ %s khỏi quốc gia.'
 msg_raised_ass: '&b%s đã thăng chức %s lên phụ tá %s.'
 msg_lowered_to_res_by: '&bBạn đã bị cắt chức thành dân thường bởi %s.'
 msg_lowered_to_res: '&b%s đã cắt chức %s thành dân thường.'
@@ -1216,7 +1216,7 @@ msg_hover_previous_page: 'Trang Trước'
 msg_max_tax_amount_only_for_percent: "Số tiền thuế tối đa chỉ có thể được thiết lập cho các thị trấn có tỷ lệ thuế."
 msg_town_set_tax_max_percent_amount: "%s đã đặt mức thuế suất tối đa là %s."
 #Added in 0.84
-msg_err_plot_belongs_to_group_toggle: 'Plot thuộc về một nhóm, sử dụng /plot group toggle'
+msg_err_plot_belongs_to_group_toggle: 'Lô đất thuộc một nhóm, hãy dùng /plot group toggle.'
 #Added in 0.85
 msg_set_perms_reset_single: '&bĐã đặt lại quyền thành công trên ô đất này.'
 #Added in 0.86
@@ -1391,7 +1391,7 @@ msg_command_blocked_inside_towns: '&cBạn không thể sử dụng lệnh đó 
 msg_command_limited: 'Bạn chỉ có thể sử dụng lệnh đó bên trong các ô đất của riêng bạn.'
 #Added in 0.104
 #Don't add a space to the end please
-msg_plot_perm_claimed_at: 'Claim lúc:'
+msg_plot_perm_claimed_at: 'Đã nhận đất lúc:'
 #Added in 0.105
 msg_wilderness_use_x_in_all_worlds: 'Sử dụng vùng hoang dã đã biến %s thành tất cả các thế giới.'
 msg_regenerations_use_x_in_all_worlds: 'Quá trình tái sinh đã biến %s ở tất cả các thế giới.'
@@ -1506,7 +1506,7 @@ msg_err_there_is_already_a_town_or_nationrank_called_x: 'Đã đổi tên %s th�
 msg_err_there_is_no_town_or_nationrank_called_x: 'Không có %s nào có tên là %s.'
 msg_successfully_add_rank_to_the_town_or_nation_rank: 'Đã thêm %s vào %s thành công.'
 msg_successfully_removed_rank_from_the_town_or_nation_rank: 'Đã xóa thành công %s khỏi %s.'
-msg_successfully_renamed_rank_for_the_town_or_nation_rank: 'Đã xóa thành công %s khỏi %s.'
+msg_successfully_renamed_rank_for_the_town_or_nation_rank: 'Đã đổi tên %s thành %s trong %s.'
 msg_err_group_has_no_nodes: 'Nhóm %s không có nút quyền nào được chỉ định.'
 msg_title_group_permissions: 'Quyền %s'
 help_ta_perms_listgroups: 'Danh sách nhóm.'
@@ -1956,7 +1956,7 @@ msg_err_that_town_is_not_conquered: "%s vẫn chưa bị chinh phục."
 #Message shown when a town has its conquered status removed by an admin.
 msg_conquered_status_removed: "Trạng thái bị chinh phục của %s đã bị xóa bỏ."
 msg_setup_command_folia: "Lệnh /ta install hiện không hoạt động trên Folia do API hội thoại không hoạt động, hãy tham khảo hướng dẫn cài đặt bên dưới."
-msg_perm_gui_folia: "Nút này hiện không hoạt động trên Folia do API hội thoại không hoạt động, hãy sử dụng lệnh /plot perm add <name> thay thế."
+msg_perm_gui_folia: "Nút này hiện không hoạt động trên Folia vì API hội thoại không hoạt động; hãy dùng lệnh /plot perm add [tên] thay thế."
 msg_folia_scoreboard: "Hiện tại, Folia chưa hỗ trợ thay đổi bảng điểm."
 #Message shown when a player cannot unclaim land because at least one plot wouldn't have enough adjacent claims.
 msg_err_cannot_unclaim_not_enough_adjacent_claims: "Bạn không thể hủy yêu cầu bồi thường thị trấn này vì thị trấn tại %s,%s không có đủ yêu cầu bồi thường liền kề (yêu cầu %s)."
@@ -2113,3 +2113,142 @@ msg_err_you_cannot_add_trust_on_outlaw: "Bạn không thể tin tưởng một n
 msg_err_you_cannot_add_trust_on_enemy: "Bạn không thể tin tưởng một người chơi đến từ quốc gia thù địch."
 msg_err_you_cannot_add_towntrust_on_outlaw: "Bạn không thể tin tưởng một thị trấn có cư dân bị thị trấn của bạn coi là bất hợp pháp."
 msg_err_you_cannot_add_towntrust_on_enemy: "Bạn không thể tin tưởng một thị trấn nằm trong quốc gia thù địch."
+
+# Eartopia completion additions
+# Added to keep this locale complete against en-US.yml.
+name: 'Towny'
+language: 'Tiếng Việt'
+author: 'TownyAdvanced contributors, Eartopia'
+description: 'Tệp ngôn ngữ cho toàn bộ thông báo trong game của Locale này.'
+default_towny_prefix: '&6[Towny] &b'
+default_town_prefix: '&6[%s] &b'
+default_nation_prefix: '&6[%s] &6'
+town_help_36: 'Liệt kê các thị trấn lân cận được sắp xếp theo khoảng cách.'
+nation_help_19: 'Được sử dụng để dịch chuyển đến các tiền đồn thuộc sở hữu của các thị trấn trong quốc gia của bạn.'
+res_8: 'Chỉ là một người nông dân khiêm tốn'
+ta_resident_help_5: 'Đặt dấu thời gian trực tuyến hoặc đã đăng ký cuối cùng của cư dân.'
+msg_err_plot_preclaim_disable: '&cBạn không thể nhận đất lô%s ngay bây giờ.'
+msg_err_plot_preunclaim_disable: '&cCư dân không thể hủy lô đất%s ngay bây giờ.'
+msg_rank_can_only_be_assigned_x_times: 'Bạn không thể gán thứ hạng%s cho%s vì nó chỉ được gán thứ hạng%s lần,%s của bạn đã sử dụng%s lần.'
+msg_you_lost_money_dying_with_town_loss: 'Bạn đã mất%s và thị trấn của bạn mất%s.'
+msg_you_lost_money_dying_with_nation_loss: 'Bạn đã mất%s và quốc gia của bạn đã mất%s.'
+msg_you_lost_money_dying_with_town_and_nation_loss: 'Bạn đã mất%s, thị trấn của bạn mất%s và quốc gia của bạn mất%s.'
+msg_your_town_lost_money_dying_and_nation_loss: 'Thị trấn của bạn mất%s và quốc gia của bạn mất%s.'
+nation_outpost_not_allowed_for_conquered_towns: 'Trạng thái chinh phục của thị trấn ngăn cản bạn dịch chuyển tức thời đến các tiền đồn của quốc gia bạn.'
+res_format_list_1: '&2'
+res_format_list_2: '&a'
+res_format_list_3: '&f'
+townboard_message_colour_1: '&6'
+townboard_message_colour_2: '&e'
+nationboard_message_colour_1: '&6'
+nationboard_message_colour_2: '&e'
+msg_click_town_info: '<green>Click để xem màn hình trạng thái thị trấn.'
+msg_click_nation_info: '<green>Click để xem màn hình trạng thái quốc gia.'
+msg_click_spawn_brief: '<green>[Dịch chuyển]'
+msg_ta_deposit_all_nations_success: 'Gửi thành công%s vào ngân hàng của tất cả các quốc gia.'
+msg_universe_heart: '<3'
+towny_prices_overclaimed_based_on: '&7Việc bảo trì được nhận đất quá mức dựa trên &a%s%s'
+msg_comptype_forsale: 'Tình trạng bán'
+flatfile_dbg_cannot_set_capital_try_next: 'Quốc gia%s không thể đặt vốn cho%s, chọn thủ đô mới...'
+flatfile_dbg_deleting_duplicate: 'Xóa:%s là bản sao của%s'
+flatfile_dbg_folders_found: 'Đã tìm thấy thư mục%s'
+flatfile_dbg_group_file_missing_town_delete: 'File nhóm thiếu Thị trấn, xóa%s'
+flatfile_dbg_loading_group_list: 'Đang tải danh sách nhóm...'
+flatfile_dbg_loading_nation: 'Quốc gia đang tải:%s'
+flatfile_dbg_loading_nation_list: 'Đang tải danh sách quốc gia...'
+flatfile_dbg_loading_resident: 'Đang tải thường trú:%s'
+flatfile_dbg_loading_resident_list: 'Đang tải danh sách cư dân...'
+flatfile_dbg_loading_server_world_list: 'Đang tải danh sách thế giới máy chủ...'
+flatfile_dbg_loading_town: 'Thị trấn đang tải:%s'
+flatfile_dbg_loading_town_list: 'Đang tải danh sách Thị trấn...'
+flatfile_dbg_loading_townblock_list: 'Đang tải danh sách khối thị trấn...'
+flatfile_dbg_loading_world: 'Đang tải thế giới:%s'
+flatfile_dbg_loading_world_list: 'Đang tải danh sách thế giới...'
+flatfile_dbg_mismatched_townblock_size: 'Đã tìm thấy các khối thị trấn%s có town_block_size không khớp với cấu hình của bạn, chúng không được tải vào bộ nhớ.'
+flatfile_dbg_missing_file_delete_group_entry: 'Thiếu file:%s xóa mục trong group.txt'
+flatfile_dbg_missing_file_delete_groups_entry: 'Thiếu tệp:%s xóa mục trong Groups.txt'
+flatfile_dbg_removing_nation_not_found: 'Xóa%s vì chúng không được tìm thấy trong Nations.txt'
+flatfile_dbg_removing_resident_not_found: 'Xóa%s vì chúng không được tìm thấy trong Resident.txt'
+flatfile_dbg_removing_town_not_found: 'Xóa%s vì chúng không được tìm thấy trong town.txt.'
+flatfile_dbg_town_fetch_outlaw: 'Tìm kiếm thị trấn ngoài vòng pháp luật:%s'
+flatfile_dbg_undefined_capital_select_new: 'Quốc gia%s chưa xác định vốn, chọn vốn mới...'
+flatfile_dbg_world_loaded_townblocks: 'Thế giới: %s đã tải %s khối thị trấn.'
+flatfile_err_cannot_create_defaults: 'Không thể tạo các tập tin và thư mục mặc định của Flatfile.'
+flatfile_err_could_not_add_to_town: 'Không thể thêm vào thị trấn!'
+flatfile_err_exception_reading_file: 'Lỗi tải: Ngoại lệ khi đọc tệp%s'
+flatfile_err_exception_reading_group_file_at_line: 'Lỗi tải: Ngoại lệ khi đọc tệp nhóm%s tại dòng:%s'
+flatfile_err_exception_reading_townblock_file_at_line: 'Lỗi tải: gặp ngoại lệ khi đọc tệp khối thị trấn %s tại dòng %s.'
+flatfile_err_exception_reading_world_file_at_line: 'Lỗi tải: Ngoại lệ khi đọc tệp thế giới%s tại dòng:%s, trong towny/data/worlds/%s.txt'
+flatfile_err_file_error_reading_world_file_at_line: 'Lỗi tải: Lỗi tệp khi đọc%s tại dòng:%s, trong towny/data/worlds/%s.txt'
+flatfile_err_homeblock_load_invalid_location: '[Warning]%s - HomeBlock đã cố tải Vị trí không hợp lệ.'
+flatfile_err_homeblock_load_invalid_townblock: '[Warning]%s - HomeBlock đã cố tải một khối thị trấn không hợp lệ.'
+flatfile_err_homeblock_load_invalid_world: '[Warning]%s - HomeBlock đã cố tải Thế giới không hợp lệ.'
+flatfile_err_invalid_townblock_resident: 'Cư dân không hợp lệ trong khối thị trấn %s. Đã bỏ qua thiết lập cư dân cho khối thị trấn...'
+flatfile_err_loading_group_list_at_line: 'Lỗi tải Danh sách nhóm tại%s, trong towny/data/groups.txt'
+flatfile_err_loading_world_list_at_line: 'Lỗi tải danh sách Thế giới tại%s, trong towny/data/worlds.txt'
+flatfile_err_nation_could_not_load_capital_disband: 'Quốc gia%s không thể tải được thủ đô và đang bị giải tán.'
+flatfile_err_reading_nation_file_at_line: 'Lỗi tải: Ngoại lệ khi đọc tệp quốc gia%s tại dòng%s, trong towny/data/nations/%s.txt'
+flatfile_err_reading_outlaw_of_town_duplicate: 'Lỗi tải: Ngoại lệ khi đọc tệp thị trấn ngoài vòng pháp luật%s.txt.%s ngoài vòng pháp luật bị trùng lặp! Đang bỏ qua việc thêm bản sao...'
+flatfile_err_reading_outlaw_of_town_not_exist: 'Lỗi tải: Ngoại lệ khi đọc tệp thị trấn ngoài vòng pháp luật%s.txt.%s ngoài vòng pháp luật không tồn tại! Đang xóa khỏi danh sách...'
+flatfile_err_reading_resident_at_line: 'Lỗi tải: Ngoại lệ khi đọc tệp thường trú%s tại dòng:%s, trong towny/data/residents/%s.txt'
+flatfile_err_reading_town_file_at_line: 'Lỗi tải: Ngoại lệ khi đọc tệp thị trấn%s tại dòng:%s, trong towny/data/towns/%s.txt'
+flatfile_err_resident_tried_load_invalid_town: 'Lỗi tải:%s đã cố tải thị trấn%s nhưng không hợp lệ. Loại bỏ thị trấn khỏi cư dân.'
+flatfile_err_town_homeblock_not_exist: '[Warning]%s không có HomeBlock.'
+flatfile_err_townblock_file_contains_unregistered_town_delete: 'Tệp khối thị trấn chứa thị trấn chưa đăng ký: %s, đang xóa %s.'
+flatfile_err_townblock_file_missing_town_delete: 'Tệp khối thị trấn thiếu thị trấn, đang xóa %s.'
+flatfile_err_townblock_file_unknown_err: 'Tệp khối thị trấn có lỗi không xác định, đang xóa %s.'
+msg_purge_complete_x_removed_from_towns: '&bPurge hoàn tất,%s cư dân không hoạt động bị xóa khỏi thị trấn.'
+msg_purge_reached_50_residents: '&bPurge đã đạt tới 50, việc xóa cư dân tiếp theo sẽ không được ghi lại để giảm thư rác.'
+help_ta_perms_townrankrename: 'Đổi tên một townrank trong tập tin townyperms'
+help_ta_perms_nationrankrename: 'Đổi tên cấp quốc gia trong tệp townyperms'
+msg_err_must_be_less_than_or_equal_to: 'Số tiền phải nhỏ hơn hoặc bằng%s'
+status_title_primary_colour: '&6'
+status_title_secondary_colour: '&e'
+status_format_list_1: '&2'
+status_format_list_2: '&a'
+status_format_list_3: '&f'
+status_format_key_value_key: '&2'
+status_format_key_value_value: '&a'
+status_format_bracket_element: '&b'
+status_format_hover_key: '&a'
+status_format_hover_bracket_colour: '&7'
+status_format_key_important: '&c'
+status_splitter: '&7|'
+help_menu_command: '<blue>'
+help_menu_subcommand: '<aqua>'
+help_menu_explanation: '<gray>'
+help_menu_requirement: '<red>'
+msg_nation_board_reset: '&bNation thiết lập lại bảng.'
+msg_err_x_in_unjailable_world: '%s đang ở trong một thế giới mà họ không thể bị bỏ tù.'
+msg_err_cannot_unclaim_outpost_with_adjacent_claims: 'Bạn không thể bỏ nhận đất một tiền đồn có bất kỳ khối thị trấn đính kèm nào.'
+msg_err_world_not_same_cant_teleport: '<red>Bạn không thể dịch chuyển đến một thế giới khác bằng lệnh này.'
+msg_resident_registered_set: 'Ngày đăng ký cư dân: ''%s'' được đặt thành: ''%s''.'
+msg_resident_lastonline_set: 'Ngày trực tuyến cuối cùng của cư dân: ''%s'' được đặt thành: ''%s''.'
+status_world_jailing: 'Bỏ tù:'
+msg_version_build_info: '<dark_green>Thông tin bản dựng: commit <green>%s</green> trên nhánh <green>%s</green>.'
+msg_version_build_info_failed: '<red>Không thể truy xuất thông tin bản dựng cho phiên bản này.'
+time-future: 'trong tương lai'
+time-just-now: 'ngay bây giờ'
+time-a-minute-ago: 'một phút trước'
+time-x-minutes-ago: '%d phút trước'
+time-an-hour-ago: 'một giờ trước'
+time-x-hours-ago: '%d giờ trước'
+time-yesterday: 'Hôm qua'
+time-x-days-ago: '%d ngày trước'
+time-a-year-ago: 'một năm trước'
+time-x-years-ago: '%d năm trước'
+status_onlinesince: 'Trực tuyến kể từ:'
+msg_a_player_spawned_to_your_town_earning_you_x: 'Người chơi%s đã xuất hiện tại thị trấn của bạn, giúp bạn kiếm được%s.'
+msg_you_have_been_refunded_your_town_cost: 'Bạn đã được hoàn lại%s vì thị trấn của bạn mới tồn tại chưa đến%s giờ và không nhận đất nhiều hơn%s khối thị trấn.'
+msg_nearby_towns: 'Các thị trấn lân cận'
+msg_no_towns_nearby: 'Không tìm thấy thị trấn nào gần đó.'
+msg_nearby_town_format: '<green>%s <white>(Khối%s)'
+msg_nearby_town_nation: '<aqua>[%s]'
+msg_err_must_specify_days_to_be_conquered: 'Bạn phải chỉ định số ngày sẽ bị chinh phục, ví dụ: 1 trở lên hoặc -1 hoặc không giới hạn đối với cuộc chinh phục vô thời hạn.'
+msg_conquered_status_granted: 'Bạn đã đặt%s ở trạng thái chinh phục trong%s ngày.'
+msg_conquered_status_granted_unlimited: 'Bạn đã đặt%s ở trạng thái chinh phục trong thời gian không xác định.'
+msg_err_must_specify_on_or_off: 'Bạn phải chỉ định bật hoặc tắt.'
+msg_nation_level_overridden_with: 'Quốc gia%s đã được đặt cấp quốc gia thành%s.'
+msg_nation_level_unset: 'Quốc gia%s đã được đặt lại cấp quốc gia theo cách thủ công. Cấp quốc gia hiện tại là%s.'
+msg_err_cannot_merge_x_seconds_remaining: 'Bạn phải đợi%s vài giây trước khi nhận đất%s hợp nhất lại.'
+msg_towny_prices_percentage_capped_at: ', lên tới%s'

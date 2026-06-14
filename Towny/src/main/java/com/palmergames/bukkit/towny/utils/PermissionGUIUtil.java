@@ -9,6 +9,7 @@ import com.palmergames.bukkit.towny.exceptions.TownyException;
 import com.palmergames.bukkit.towny.object.PermissionData;
 import com.palmergames.bukkit.towny.object.PlotGroup;
 import com.palmergames.bukkit.towny.object.Translatable;
+import com.palmergames.bukkit.towny.object.Translation;
 import com.palmergames.bukkit.towny.object.WorldCoord;
 import com.palmergames.bukkit.towny.object.gui.EditGUI;
 import com.palmergames.bukkit.towny.object.gui.PermissionGUI;
@@ -35,6 +36,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.UUID;
@@ -87,6 +89,7 @@ public class PermissionGUIUtil {
 		
 		Inventory page = ResidentUtil.getBlankPage(Translatable.of("permission_gui_header").forLocale(resident));
 		ArrayList<Inventory> pages = new ArrayList<>();
+		Locale locale = Translation.getLocale(player);
 
 		for (Entry<Resident, PermissionData> entry : townBlock.getPermissionOverrides().entrySet()) {
 			ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
@@ -109,9 +112,9 @@ public class PermissionGUIUtil {
 
 			if (canEdit) {
 				if (entry.getValue().getLastChangedAt() > 0 && !entry.getValue().getLastChangedBy().isEmpty())
-					lore.add(Translatable.of("msg_last_edited", TownyFormatter.lastOnlineFormat.format(entry.getValue().getLastChangedAt()), entry.getValue().getLastChangedBy()).component(player.locale()));
+					lore.add(Translatable.of("msg_last_edited", TownyFormatter.lastOnlineFormat.format(entry.getValue().getLastChangedAt()), entry.getValue().getLastChangedBy()).component(locale));
 					
-				lore.add(Translatable.of("msg_click_to_edit").component(player.locale()));
+				lore.add(Translatable.of("msg_click_to_edit").component(locale));
 			}
 
 			meta.lore(lore);
@@ -140,7 +143,7 @@ public class PermissionGUIUtil {
 		pages.add(page);
 		resident.setGUIPages(pages);
 		resident.setGUIPageNum(0);
-		new PermissionGUI(resident, pages.get(0), Translatable.of("permission_gui_header").component(player.locale()), townBlock, canEdit);
+		new PermissionGUI(resident, pages.get(0), Translatable.of("permission_gui_header").component(locale), townBlock, canEdit);
 	}
 	
 	public static void openPermissionEditorGUI(@NotNull Resident resident, @NotNull TownBlock townBlock, @NotNull ItemStack clickedItem) {
@@ -149,7 +152,8 @@ public class PermissionGUIUtil {
 			return;
 		}
 		
-		Inventory inventory = Bukkit.createInventory(null, 54, Translatable.of("permission_gui_header").component(player.locale()));
+		Locale locale = Translation.getLocale(player);
+		Inventory inventory = Bukkit.createInventory(null, 54, Translatable.of("permission_gui_header").component(locale));
 
 		final String uuidString = clickedItem.getItemMeta().getPersistentDataContainer().get(GUI_PLAYER_UUID_KEY, PersistentDataType.STRING);
 		if (uuidString == null) {
@@ -204,7 +208,7 @@ public class PermissionGUIUtil {
 		inventory.setItem(50, backButton);
 		inventory.setItem(53, deleteButton);
 		
-		new EditGUI(resident, inventory, Translatable.of("permission_gui_header").component(player.locale()), townBlock, skullOwner);
+		new EditGUI(resident, inventory, Translatable.of("permission_gui_header").component(locale), townBlock, skullOwner);
 	}
 
 	public static SetPermissionType[] getDefaultTypes() {

@@ -14,6 +14,7 @@ import com.palmergames.bukkit.towny.object.TownBlockType;
 import com.palmergames.bukkit.towny.object.TownBlockTypeCache.CacheType;
 import com.palmergames.bukkit.towny.object.TownBlockTypeHandler;
 import com.palmergames.bukkit.towny.object.Translatable;
+import com.palmergames.bukkit.towny.object.Translation;
 
 import com.palmergames.bukkit.towny.object.gui.SelectionGUI;
 import com.palmergames.bukkit.towny.object.metadata.BooleanDataField;
@@ -170,7 +171,7 @@ public class ResidentUtil {
 			return;
 		}
 
-		Component inventoryName = Translatable.of("gui_title_select_plot_type").component(player.locale());
+		Component inventoryName = Translatable.of("gui_title_select_plot_type").component(Translation.getLocale(player));
 		Inventory page = getBlankPage(inventoryName);
 		ArrayList<Inventory> pages = new ArrayList<>();
 		
