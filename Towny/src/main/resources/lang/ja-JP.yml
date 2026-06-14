@@ -821,36 +821,36 @@ msg_err_homeblock_has_not_been_set: 'ホームブロックが設定されてい�
 msg_err_spawn_not_within_homeblock: 'スポーン地点がホームブロック内ではありません。''/town set homeblock''を使用してください。'
 #Added in 0.44
 #TownyChat language strings
-tc_err_invalid_command: '無効なコマンドです。'
-tc_settings_reloaded: '[TownChat] 設定を再読み込みしました。'
-tc_err_unrecognized_command_format: 'エラー: 無効なコマンド形式です'
-tc_channel_list_status: '(ステータス)'
-tc_channel_list_in: '参加'
-tc_channel_list_out: '退出'
-tc_err_you_dont_have_perm_mute_list: '権限がありません。'
-tc_err_you_dont_have_unmute_perm: '権限がありません。'
-tc_err_no_channel_called_channel: '%sというチャンネルはありません。'
-tc_err_no_muted_players_in_channel_players: '&f%s でミュートされているプレイヤーはいません。'
-tc_players_muted_in_channel: '[TownyChat] &f%n &2人を &f%s&2: &f%s でミュートしました。'
-tc_err_no_online_players_with_name: '%sはオンラインではありません。'
-tc_err_you_dont_have_mute_perms: '権限がありません。'
-tc_err_you_cant_mute_admin: '管理者をミュートにすることはできません。'
-tc_err_you_cant_mute_chat_mod: 'モデレーターをミュートにすることはできません。'
-tc_player_already_muted_in_channel: '[TownyChat] %sはすでにミュートにされています。'
-tc_player_is_now_muted_in_channel: '[TownyChat] &f%s &2は &f%sでミュートされています。'
-tc_player_is_not_muted_in_channel: '[TownyChat] %sはミュートではありません。'
-tc_player_is_now_unmuted_in_channel: '[TownyChat] &f%s &2は &f%sでのミュートが解除されました。'
-tc_err_you_are_currently_muted_in_channel: '&f%s&cでミュートされています!'
-tc_err_you_cannot_leave_channel: '%sから退出することはできません。'
-tc_you_already_left_channel: '[TownyChat] 既に%sに参加しています。'
-tc_you_left_channel: '[TownyChat] %sから退出しました。'
-tc_you_are_now_talking_in_channel: '[TownyChat] %sで会話しています。'
-tc_err_you_cannot_join_channel: '%sに参加することはできません。'
-tc_you_are_already_in_channel: '[TownyChat] 既に%sに参加しています。'
-tc_you_joined_channel: '[TownyChat] %sに参加しました。'
-tc_err_you_are_already_talking_in_default_channel_help: 'あなたはデフォルトチャンネルでチャットしています。他のチャンネルに切り替えるには、コマンドを使用してください。'
-tc_err_unable_to_talk_essentials_mute: 'ミュート中のため話せません！'
-tc_err_unable_to_talk_you_are_spamming: 'スパムと判定されたため話せません！'
+tc_err_invalid_command: "<font:eartopia:ui>\uE712</font> 無効なコマンドです。"
+tc_settings_reloaded: "<font:eartopia:ui>\uE716</font> [TownChat] 設定を再読み込みしました。"
+tc_err_unrecognized_command_format: "<font:eartopia:ui>\uE712</font> エラー: 無効なコマンド形式です"
+tc_channel_list_status: "<font:eartopia:ui>\uE722</font> (ステータス)"
+tc_channel_list_in: "<font:eartopia:ui>\uE722</font> 参加"
+tc_channel_list_out: "<font:eartopia:ui>\uE722</font> 退出"
+tc_err_you_dont_have_perm_mute_list: "<font:eartopia:ui>\uE712</font> 権限がありません。"
+tc_err_you_dont_have_unmute_perm: "<font:eartopia:ui>\uE712</font> 権限がありません。"
+tc_err_no_channel_called_channel: "<font:eartopia:ui>\uE712</font> %sというチャンネルはありません。"
+tc_err_no_muted_players_in_channel_players: "<font:eartopia:ui>\uE712</font> &f%s でミュートされているプレイヤーはいません。"
+tc_players_muted_in_channel: "<font:eartopia:ui>\uE722</font> [TownyChat] &f%n &2人を &f%s&2: &f%s でミュートしました。"
+tc_err_no_online_players_with_name: "<font:eartopia:ui>\uE712</font> %sはオンラインではありません。"
+tc_err_you_dont_have_mute_perms: "<font:eartopia:ui>\uE712</font> 権限がありません。"
+tc_err_you_cant_mute_admin: "<font:eartopia:ui>\uE712</font> 管理者をミュートにすることはできません。"
+tc_err_you_cant_mute_chat_mod: "<font:eartopia:ui>\uE712</font> モデレーターをミュートにすることはできません。"
+tc_player_already_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] %sはすでにミュートにされています。"
+tc_player_is_now_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] &f%s &2は &f%sでミュートされています。"
+tc_player_is_not_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] %sはミュートではありません。"
+tc_player_is_now_unmuted_in_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] &f%s &2は &f%sでのミュートが解除されました。"
+tc_err_you_are_currently_muted_in_channel: "<font:eartopia:ui>\uE712</font> &f%s&cでミュートされています!"
+tc_err_you_cannot_leave_channel: "<font:eartopia:ui>\uE712</font> %sから退出することはできません。"
+tc_you_already_left_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] 既に%sに参加しています。"
+tc_you_left_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] %sから退出しました。"
+tc_you_are_now_talking_in_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] %sで会話しています。"
+tc_err_you_cannot_join_channel: "<font:eartopia:ui>\uE712</font> %sに参加することはできません。"
+tc_you_are_already_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] 既に%sに参加しています。"
+tc_you_joined_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] %sに参加しました。"
+tc_err_you_are_already_talking_in_default_channel_help: "<font:eartopia:ui>\uE712</font> あなたはデフォルトチャンネルでチャットしています。他のチャンネルに切り替えるには、コマンドを使用してください。"
+tc_err_unable_to_talk_essentials_mute: "<font:eartopia:ui>\uE712</font> ミュート中のため話せません！"
+tc_err_unable_to_talk_you_are_spamming: "<font:eartopia:ui>\uE712</font> スパムと判定されたため話せません！"
 msg_admin_set_plot_help_1: '町にいるとき。'
 msg_admin_set_plot_help_2: '荒野にいる場合。'
 msg_err_not_enough_outposts_free_to_claim: '十分な前哨基地が利用可能でないため、%s/%s をclaimすることはできません。'
@@ -1203,8 +1203,8 @@ msg_new_town_advice: 'あなたの町が作成されました。あなたの町�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '攻撃されたことによりテレポートがキャンセルされました。'
 #Added in 0.82
-invitation_prefix: "&8[&7招待&8] &9"
-confirmation_prefix: "&8[&7確認&8] &9"
+invitation_prefix: "&8[&7招待&8] <font:eartopia:ui>\uE72C</font> &9"
+confirmation_prefix: "&8[&7確認&8] <font:eartopia:ui>\uE717</font> &9"
 this_message_will_expire2: '&9%s秒後に自動で削除されます。'
 msg_hover_next_page: '次のページ'
 msg_hover_previous_page: '前のページ'
@@ -1686,8 +1686,8 @@ msg_baltop_book_format: '%s. %s | %s'
 #Message shown when a confirmation times out.
 msg_confirmation_timed_out: 'タイムアウトしました。'
 #Added in 0.134
-tc_player_channel_sound_muted: 'チャンネルの音声をミュートしました。'
-tc_player_channel_sound_unmuted: 'チャンネルのミュートを解除しました。'
+tc_player_channel_sound_muted: "<font:eartopia:ui>\uE717</font> チャンネルの音声をミュートしました。"
+tc_player_channel_sound_unmuted: "<font:eartopia:ui>\uE716</font> チャンネルのミュートを解除しました。"
 #Added in 0.135
 msg_cant_toggle_pvp_outsider_in_plot: 'この土地には外国人がいるので、PvP状態を変更できません。'
 #Added in 0.136
@@ -2125,6 +2125,12 @@ description: 'このLocaleで使うすべてのゲーム内メッセージの言
 default_towny_prefix: '&6[Towny] &b'
 default_town_prefix: '&6[%s] &b'
 default_nation_prefix: '&6[%s] &6'
+eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
+eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
+eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
+eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
+eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
+eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
 town_help_36: '近くの町を距離順にリストします。'
 nation_help_19: 'あなたの国の町が所有する前哨基地にテレポートするために使用されます。'
 res_8: 'ただの謙虚な農家'

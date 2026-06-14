@@ -57,6 +57,10 @@ import java.util.UUID;
 
 public class TownyMessaging {
 	private static final Logger LOGGER = LogManager.getLogger("Towny");
+	private static final String ICON_ERROR = "eartopia_icon_error";
+	private static final String ICON_NOTICE = "eartopia_icon_notice";
+	private static final String ICON_TOWN = "eartopia_icon_town";
+	private static final String ICON_NATION = "eartopia_icon_nation";
 
 	/*
 	 * NON-TRANSLATABLE MESSAGING METHODS
@@ -73,7 +77,7 @@ public class TownyMessaging {
 	 * @param msg message to send
 	 */
 	public static void sendErrorMsg(String msg) {
-		LOGGER.warn(Colors.strip("Error: " + msg));
+		LOGGER.warn(plainText("Error: " + msg));
 	}
 
 	/**
@@ -92,17 +96,17 @@ public class TownyMessaging {
 			return;
 
 		if (sender instanceof CommandSender toSend) {
-			sendMessage(toSend, Translatable.of("default_towny_prefix").stripColors(sender instanceof ConsoleCommandSender).append(Colors.DARK_RED + msg).forLocale(toSend));
+			sendMessage(toSend, Translatable.of("default_towny_prefix").stripColors(sender instanceof ConsoleCommandSender).append(icon(toSend, ICON_ERROR) + " " + Colors.DARK_RED + msg).forLocale(toSend));
 		} else if (sender instanceof TownyObject townySender) {
 			if (townySender instanceof Resident resident) {
 				// Resident
-				sendMessage(resident, Translation.of("default_towny_prefix") + Colors.DARK_RED + msg);
+				sendMessage(resident, Translatable.of("default_towny_prefix").append(icon(resident, ICON_ERROR) + " " + Colors.DARK_RED + msg).forLocale(resident));
 			} else if (townySender instanceof Town town) {
 				// Town
-				sendPrefixedTownMessage(town, Colors.DARK_RED + msg);
+				sendPrefixedTownMessage(town, icon(ICON_ERROR) + " " + Colors.DARK_RED + msg);
 			} else if (townySender instanceof Nation nation) {
 				// Nation
-				sendPrefixedNationMessage(nation, Colors.DARK_RED + msg);
+				sendPrefixedNationMessage(nation, icon(ICON_ERROR) + " " + Colors.DARK_RED + msg);
 			}
 		} else {
 			sendErrorMsg(String.format("Unsupported TownyMessaging#sendErrorMsg sender class type: %s", sender.getClass().getName()));
@@ -118,8 +122,7 @@ public class TownyMessaging {
 	 * @param msg the message to be sent
 	 */
 	public static void sendMsg(String msg) {
-		
-		LOGGER.info(Colors.strip(msg));
+		LOGGER.info(plainText(msg));
 	}
 
 	/**
@@ -135,15 +138,15 @@ public class TownyMessaging {
 	public static void sendMsg(CommandSender sender, String msg) {
 		if (sender == null || msg == null ||  msg.isEmpty())
 			return;
-		
+
 		if (sender instanceof Player p) {
-			sendMessage(p, Translatable.of("default_towny_prefix").forLocale(p) + Colors.GREEN + msg);
+			sendMessage(p, Translatable.of("default_towny_prefix").forLocale(p) + icon(p, ICON_NOTICE) + " " + Colors.GREEN + msg);
 		} else if (sender instanceof ConsoleCommandSender) {
-			sendMessage(sender, Translatable.of("default_towny_prefix").stripColors(true).defaultLocale() + Colors.strip(msg));
+			sendMessage(sender, Translatable.of("default_towny_prefix").stripColors(true).defaultLocale() + icon(sender, ICON_NOTICE) + " " + Colors.strip(msg));
 		} else {
-			sendMessage(sender, Translatable.of("default_towny_prefix").forLocale(sender) + Colors.GREEN + msg);
+			sendMessage(sender, Translatable.of("default_towny_prefix").forLocale(sender) + icon(sender, ICON_NOTICE) + " " + Colors.GREEN + msg);
 		}
-		
+
 		sendDevMsg(msg);
 	}
 	
@@ -199,7 +202,7 @@ public class TownyMessaging {
 		if (sender instanceof Player player) {
 			player.sendMessage(TownyComponents.miniMessage(line));
 		} else if (sender instanceof CommandSender commandSender) {
-			commandSender.sendPlainMessage(Colors.strip(line));
+			commandSender.sendPlainMessage(plainText(line));
 		} else if (sender instanceof Resident resident) {
 			resident.sendMessage(TownyComponents.miniMessage(line));
 		}
@@ -226,6 +229,25 @@ public class TownyMessaging {
 			sendMessage(sender, line);
 	}
 
+	private static String icon(CommandSender sender, String key) {
+		return Translatable.of(key).forLocale(sender);
+	}
+
+	private static String icon(Resident resident, String key) {
+		return Translatable.of(key).forLocale(resident);
+	}
+
+	private static String icon(String key) {
+		return Translatable.of(key).defaultLocale();
+	}
+
+	private static String plainText(String line) {
+		return TownyComponents.stripTags(Colors.strip(line))
+			.replaceAll("[\\uE700-\\uE7FF]", "")
+			.replaceAll(" {2,}", " ")
+			.strip();
+	}
+
 	/**
 	 * Send a message to All online players and the log.
 	 * Uses default_towny_prefix
@@ -236,7 +258,7 @@ public class TownyMessaging {
 		LOGGER.info(Colors.strip("[Global Message] " + line));
 		for (Player player : BukkitTools.getOnlinePlayers()) {
 			if (player != null && TownyAPI.getInstance().isTownyWorld(player.getWorld()))
-				sendMessage(player, Translation.of("default_towny_prefix") + line);
+				sendMessage(player, Translatable.of("default_towny_prefix").forLocale(player) + icon(player, ICON_NOTICE) + " " + line);
 		}
 	}
 	
@@ -268,9 +290,9 @@ public class TownyMessaging {
 	 * @param line the actual message
 	 */
 	public static void sendPrefixedTownMessage(Town town, String line) {
-		LOGGER.info(Colors.strip("[Town Msg] " + StringMgmt.remUnderscore(town.getName()) + ": " + line));
+		LOGGER.info(plainText("[Town Msg] " + StringMgmt.remUnderscore(town.getName()) + ": " + line));
 		for (Player player : TownyAPI.getInstance().getOnlinePlayers(town))
-			sendMessage(player, Translation.of("default_town_prefix", StringMgmt.remUnderscore(town.getName())) + line);
+			sendMessage(player, Translatable.of("default_town_prefix", StringMgmt.remUnderscore(town.getName())).forLocale(player) + icon(player, ICON_TOWN) + " " + line);
 	}
 
 	/**
@@ -281,9 +303,9 @@ public class TownyMessaging {
 	 * @param line the message
 	 */
 	public static void sendPrefixedNationMessage(Nation nation, String line) {
-		LOGGER.info(Colors.strip("[Nation Msg] " + StringMgmt.remUnderscore(nation.getName()) + ": " + line));
+		LOGGER.info(plainText("[Nation Msg] " + StringMgmt.remUnderscore(nation.getName()) + ": " + line));
 		for (Player player : TownyAPI.getInstance().getOnlinePlayers(nation))
-			sendMessage(player, Translation.of("default_nation_prefix", StringMgmt.remUnderscore(nation.getName())) + line);
+			sendMessage(player, Translatable.of("default_nation_prefix", StringMgmt.remUnderscore(nation.getName())).forLocale(player) + icon(player, ICON_NATION) + " " + line);
 	}
 
 	/*
@@ -443,22 +465,22 @@ public class TownyMessaging {
 		final Translator translator = Translator.locale(player);
 		String senderName = invite.getSender().getName();
 		if (invite.getSender() instanceof Town town) { // Town invited Resident
-			String firstline = town.hasNation()
-					? translator.of("invitation_prefix") + translator.of("you_have_been_invited_to_join3", Colors.colorTown(senderName), Colors.colorNation(town.getNationOrNull()))
-					: translator.of("invitation_prefix") + translator.of("you_have_been_invited_to_join2", Colors.colorTown(senderName));
+			Component firstline = town.hasNation()
+					? translator.component("invitation_prefix").append(translator.component("you_have_been_invited_to_join3", Colors.colorTown(senderName), Colors.colorNation(town.getNationOrNull())))
+					: translator.component("invitation_prefix").append(translator.component("you_have_been_invited_to_join2", Colors.colorTown(senderName)));
 			String confirmline = TownySettings.getAcceptCommand() + " " + senderName;
 			String cancelline = TownySettings.getDenyCommand() + " " + senderName;
 			sendInvitationMessage(player, firstline, confirmline, cancelline);
 		}
 		if (invite.getSender() instanceof Nation) {
 			if (invite.getReceiver() instanceof Town) { // Nation invited Town
-				String firstline = translator.of("invitation_prefix") + translator.of("your_town_has_been_invited_to_join_nation", Colors.colorNation(senderName));
+				Component firstline = translator.component("invitation_prefix").append(translator.component("your_town_has_been_invited_to_join_nation", Colors.colorNation(senderName)));
 				String confirmline = "t invite accept " + senderName;
 				String cancelline = "t invite deny " + senderName;
 				sendInvitationMessage(player, firstline, confirmline, cancelline);
 			}
 			if (invite.getReceiver() instanceof Nation) { // Nation allied Nation
-				String firstline = translator.of("invitation_prefix") + translator.of("you_have_been_requested_to_ally2", Colors.colorNation(senderName));
+				Component firstline = translator.component("invitation_prefix").append(translator.component("you_have_been_requested_to_ally2", Colors.colorNation(senderName)));
 				String confirmline = "n ally accept " + senderName;
 				String cancelline = "n ally deny " + senderName;
 				sendInvitationMessage(player, firstline, confirmline, cancelline);
@@ -473,7 +495,7 @@ public class TownyMessaging {
 	 * @param confirmline - Line for sending the confirmation.
 	 * @param cancelline - Line for sending the cancellation.
 	 */
-	public static void sendInvitationMessage(CommandSender player, String firstline, String confirmline, String cancelline) {
+	public static void sendInvitationMessage(CommandSender player, Component firstline, String confirmline, String cancelline) {
 		final Translator translator = Translator.locale(player);
 		NamedTextColor acceptColour = Colors.toNamedTextColor(TownySettings.getConfirmationCommandYesColour()) != null
 				? Colors.toNamedTextColor(TownySettings.getConfirmationCommandYesColour())
@@ -494,7 +516,7 @@ public class TownyMessaging {
 			.hoverEvent(HoverEvent.showText(translator.component("msg_confirmation_spigot_click_cancel", cancelline, "/" + cancelline)))
 			.clickEvent(ClickEvent.runCommand("/towny:" + cancelline));
 		
-		player.sendMessage(Component.text(firstline).append(Component.newline())
+		player.sendMessage(firstline.append(Component.newline())
 			.append(confirmComponent).append(Component.space()).append(cancelComponent));
 	}
 	

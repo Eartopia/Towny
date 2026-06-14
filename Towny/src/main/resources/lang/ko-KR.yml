@@ -28,6 +28,12 @@ author: Daybreak 새벽
 #and formatting. Learn about MiniMessage formatting here:
 #https://docs.adventure.kyori.net/minimessage/format.html
 default_towny_prefix: '&6[타우니] &b'
+eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
+eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
+eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
+eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
+eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
+eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
 unclaimed_plot_name: '소유자 없음'
 unclaimed_zone_name: '야생'
 ############################################################
@@ -596,36 +602,36 @@ msg_err_homeblock_has_not_been_set: '홈 블록이 설정되지 않았습니다.
 msg_err_spawn_not_within_homeblock: '스폰이 홈 블록 안에 있지 않습니다. /town set homeblock을 먼저 사용하세요.'
 #Added in 0.44
 #TownyChat language strings
-tc_err_invalid_command: '오류: 잘못된 명령어입니다!'
-tc_settings_reloaded: '[타우니채팅] 설정이 리로드되었습니다!'
-tc_err_unrecognized_command_format: '오류: 인식되지 않는 명령어 형식입니다!'
-tc_channel_list_status: '(상태)'
-tc_channel_list_in: '안'
-tc_channel_list_out: '밖'
-tc_err_you_dont_have_perm_mute_list: '뮤트 목록을 확인할 권한이 없습니다.'
-tc_err_you_dont_have_unmute_perm: '언뮤트 권한이 없습니다.'
-tc_err_no_channel_called_channel: '&f%s(이)라는 이름의 채널이 없습니다.'
-tc_err_no_muted_players_in_channel_players: '&f%s 채널에 뮤트된 주민이 없습니다.'
-tc_players_muted_in_channel: '[타우니채팅] &f%n&2명의 주민이 &f%s&2 채널에서 뮤트되었습니다: &f%s'
-tc_err_no_online_players_with_name: '&f%s(이)라는 닉네임의 주민이 없습니다.'
-tc_err_you_dont_have_mute_perms: '뮤트 권한이 없습니다.'
-tc_err_you_cant_mute_admin: '타우니 관리자를 뮤트할 수 없습니다.'
-tc_err_you_cant_mute_chat_mod: '채팅 관리자를 뮤트할 수 없습니다.'
-tc_player_already_muted_in_channel: '[타우니채팅] 주민이 &f%s에서 이미 뮤트되었습니다.'
-tc_player_is_now_muted_in_channel: '[타우니채팅] &f%s&2님은 &f%s에서 뮤트되었습니다.'
-tc_player_is_not_muted_in_channel: '[타우니채팅] 주민이 &f%s에서 뮤트되지 않았습니다.'
-tc_player_is_now_unmuted_in_channel: '[타우니채팅] &f%s&2님은 &f%s에서 언뮤트되었습니다.'
-tc_err_you_are_currently_muted_in_channel: '귀하는 현재 &f%s&c에서 뮤트되었습니다!'
-tc_err_you_cannot_leave_channel: '&f%s 채널을 떠날 수 없습니다.'
-tc_you_already_left_channel: '[타우니채팅] 이미 &f%s에서 나왔습니다.'
-tc_you_left_channel: '[타우니채팅] &f%s 채널을 나왔습니다.'
-tc_you_are_now_talking_in_channel: '[타우니채팅] 귀하는 이제 &f%s에서 말합니다.'
-tc_err_you_cannot_join_channel: '&f%s에 입장할 수 없습니다.'
-tc_you_are_already_in_channel: '[타우니채팅] 이미 &f%s에 있습니다.'
-tc_you_joined_channel: '[타우니채팅] &f%s에 입장하였습니다.'
-tc_err_you_are_already_talking_in_default_channel_help: '이미 전체 채팅에서 말하고 있습니다. 다른 채널로 변경하려면 해당 채널의 명령어를 사용하세요.'
-tc_err_unable_to_talk_essentials_mute: '말할 수 없습니다...귀하는 현재 뮤트되었습니다!'
-tc_err_unable_to_talk_you_are_spamming: '말할 수 없습니다...도배를 멈춰주세요!'
+tc_err_invalid_command: "<font:eartopia:ui>\uE712</font> 오류: 잘못된 명령어입니다!"
+tc_settings_reloaded: "<font:eartopia:ui>\uE716</font> [타우니채팅] 설정이 리로드되었습니다!"
+tc_err_unrecognized_command_format: "<font:eartopia:ui>\uE712</font> 오류: 인식되지 않는 명령어 형식입니다!"
+tc_channel_list_status: "<font:eartopia:ui>\uE722</font> (상태)"
+tc_channel_list_in: "<font:eartopia:ui>\uE722</font> 안"
+tc_channel_list_out: "<font:eartopia:ui>\uE722</font> 밖"
+tc_err_you_dont_have_perm_mute_list: "<font:eartopia:ui>\uE712</font> 뮤트 목록을 확인할 권한이 없습니다."
+tc_err_you_dont_have_unmute_perm: "<font:eartopia:ui>\uE712</font> 언뮤트 권한이 없습니다."
+tc_err_no_channel_called_channel: "<font:eartopia:ui>\uE712</font> &f%s(이)라는 이름의 채널이 없습니다."
+tc_err_no_muted_players_in_channel_players: "<font:eartopia:ui>\uE712</font> &f%s 채널에 뮤트된 주민이 없습니다."
+tc_players_muted_in_channel: "<font:eartopia:ui>\uE722</font> [타우니채팅] &f%n&2명의 주민이 &f%s&2 채널에서 뮤트되었습니다: &f%s"
+tc_err_no_online_players_with_name: "<font:eartopia:ui>\uE712</font> &f%s(이)라는 닉네임의 주민이 없습니다."
+tc_err_you_dont_have_mute_perms: "<font:eartopia:ui>\uE712</font> 뮤트 권한이 없습니다."
+tc_err_you_cant_mute_admin: "<font:eartopia:ui>\uE712</font> 타우니 관리자를 뮤트할 수 없습니다."
+tc_err_you_cant_mute_chat_mod: "<font:eartopia:ui>\uE712</font> 채팅 관리자를 뮤트할 수 없습니다."
+tc_player_already_muted_in_channel: "<font:eartopia:ui>\uE717</font> [타우니채팅] 주민이 &f%s에서 이미 뮤트되었습니다."
+tc_player_is_now_muted_in_channel: "<font:eartopia:ui>\uE717</font> [타우니채팅] &f%s&2님은 &f%s에서 뮤트되었습니다."
+tc_player_is_not_muted_in_channel: "<font:eartopia:ui>\uE717</font> [타우니채팅] 주민이 &f%s에서 뮤트되지 않았습니다."
+tc_player_is_now_unmuted_in_channel: "<font:eartopia:ui>\uE716</font> [타우니채팅] &f%s&2님은 &f%s에서 언뮤트되었습니다."
+tc_err_you_are_currently_muted_in_channel: "<font:eartopia:ui>\uE712</font> 귀하는 현재 &f%s&c에서 뮤트되었습니다!"
+tc_err_you_cannot_leave_channel: "<font:eartopia:ui>\uE712</font> &f%s 채널을 떠날 수 없습니다."
+tc_you_already_left_channel: "<font:eartopia:ui>\uE717</font> [타우니채팅] 이미 &f%s에서 나왔습니다."
+tc_you_left_channel: "<font:eartopia:ui>\uE716</font> [타우니채팅] &f%s 채널을 나왔습니다."
+tc_you_are_now_talking_in_channel: "<font:eartopia:ui>\uE716</font> [타우니채팅] 귀하는 이제 &f%s에서 말합니다."
+tc_err_you_cannot_join_channel: "<font:eartopia:ui>\uE712</font> &f%s에 입장할 수 없습니다."
+tc_you_are_already_in_channel: "<font:eartopia:ui>\uE717</font> [타우니채팅] 이미 &f%s에 있습니다."
+tc_you_joined_channel: "<font:eartopia:ui>\uE716</font> [타우니채팅] &f%s에 입장하였습니다."
+tc_err_you_are_already_talking_in_default_channel_help: "<font:eartopia:ui>\uE712</font> 이미 전체 채팅에서 말하고 있습니다. 다른 채널로 변경하려면 해당 채널의 명령어를 사용하세요."
+tc_err_unable_to_talk_essentials_mute: "<font:eartopia:ui>\uE712</font> 말할 수 없습니다...귀하는 현재 뮤트되었습니다!"
+tc_err_unable_to_talk_you_are_spamming: "<font:eartopia:ui>\uE712</font> 말할 수 없습니다...도배를 멈춰주세요!"
 msg_admin_set_plot_help_1: '마을에 있을 떄.'
 msg_admin_set_plot_help_2: '야생에 있을 때.'
 msg_err_not_enough_outposts_free_to_claim: '점유할 수 있는 전초기지가 충분하지 않습니다. (%s/%s)'
@@ -963,8 +969,8 @@ msg_new_town_advice: '마을을 생성하신 것을 축하합니다! 현재 당�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '공격을 받아서 이동이 취소되었습니다.'
 #Added in 0.82
-invitation_prefix: "&8[&7초대&8] &9"
-confirmation_prefix: "&8[&7확인&8] &9"
+invitation_prefix: "&8[&7초대&8] <font:eartopia:ui>\uE72C</font> &9"
+confirmation_prefix: "&8[&7확인&8] <font:eartopia:ui>\uE717</font> &9"
 this_message_will_expire2: '이것은 자동으로 %s초 후에 만료 됩니다.'
 msg_hover_next_page: '다음 페이지'
 msg_hover_previous_page: '이전 페이지'
@@ -1747,8 +1753,8 @@ msg_error_town_has_no_allies: '마을에는 나열할 동맹이 없습니다.'
 msg_error_town_has_no_enemies: '마을에는 나열할 적이 없습니다.'
 msg_baltop_book_format: '%s. %s | %s'
 msg_confirmation_timed_out: '확인 시간이 초과되었습니다.'
-tc_player_channel_sound_muted: '채널 사운드가 음소거되었습니다'
-tc_player_channel_sound_unmuted: '채널 사운드의 음소거가 해제되었습니다.'
+tc_player_channel_sound_muted: "<font:eartopia:ui>\uE717</font> 채널 사운드가 음소거되었습니다"
+tc_player_channel_sound_unmuted: "<font:eartopia:ui>\uE716</font> 채널 사운드의 음소거가 해제되었습니다."
 msg_view_on_web: '&7웹에서 보려면 클릭하세요.'
 town1_has_merged_with_town2: '&6%s 마을은%s 마을과 합병하기로 합의했습니다.'
 status_neutrality_cost: '중립 비용:'

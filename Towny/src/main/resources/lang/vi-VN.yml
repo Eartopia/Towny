@@ -824,36 +824,36 @@ msg_err_homeblock_has_not_been_set: 'Ô trung tâm chưa được thiết lập,
 msg_err_spawn_not_within_homeblock: 'Spawn không nằm trong ô trung tâm, trước tiên hãy sử dụng ''/town set homeblock''.'
 #Added in 0.44
 #TownyChat language strings
-tc_err_invalid_command: 'Lỗi: Lệnh không hợp lệ!'
-tc_settings_reloaded: '[TownyChat] Cài đặt đã được tải lại!'
-tc_err_unrecognized_command_format: 'Lỗi: định dạng lệnh không được nhận dạng!'
-tc_channel_list_status: '(Trạng thái)'
-tc_channel_list_in: 'Vào'
-tc_channel_list_out: 'Ra'
-tc_err_you_dont_have_perm_mute_list: 'Bạn không có quyền xem danh sách tắt tiếng'
-tc_err_you_dont_have_unmute_perm: 'Bạn không có quyền bỏ tắt tiếng'
-tc_err_no_channel_called_channel: 'Không có kênh nào có tên là &f%s'
-tc_err_no_muted_players_in_channel_players: 'Không có người chơi nào bị tắt tiếng trong &f%s'
-tc_players_muted_in_channel: '[TownyChat] &f%n &2người chơi bị tắt tiếng trong &f%s&2: &f%s'
-tc_err_no_online_players_with_name: 'Không có người chơi trực tuyến nào có tên &f%s'
-tc_err_you_dont_have_mute_perms: 'Bạn không có đủ quyền để cấm mõm người khác'
-tc_err_you_cant_mute_admin: 'Bạn không thể tắt tiếng người quản trị Towny.'
-tc_err_you_cant_mute_chat_mod: 'Bạn không thể tắt tiếng người điều hành cuộc trò chuyện.'
-tc_player_already_muted_in_channel: '[TownyChat] Người chơi đã bị tắt tiếng trong &f%s'
-tc_player_is_now_muted_in_channel: '[TownyChat] &f%s &2hiện đã bị tắt tiếng trong &f%s'
-tc_player_is_not_muted_in_channel: '[TownyChat] Người chơi không còn bị tắt tiếng trong &f%s'
-tc_player_is_now_unmuted_in_channel: '[TownyChat] &f%s &2hiện đã được bỏ tắt tiếng trong &f%s'
-tc_err_you_are_currently_muted_in_channel: 'Hiện tại bạn đang bị tắt tiếng trong &f%s&c!'
-tc_err_you_cannot_leave_channel: 'Bạn không thể rời khỏi &f%s'
-tc_you_already_left_channel: '[TownyChat] Bạn đã rời khỏi &f%s'
-tc_you_left_channel: '[TownyChat] Bạn đã rời khỏi &f%s'
-tc_you_are_now_talking_in_channel: '[TownyChat] Bây giờ bạn đang nói chuyện trong kênh &f%s'
-tc_err_you_cannot_join_channel: 'Bạn không thể tham gia &f%s'
-tc_you_are_already_in_channel: '[TownyChat] Bạn đã ở trong &f%s'
-tc_you_joined_channel: '[TownyChat] Bạn đã tham gia &f%s'
-tc_err_you_are_already_talking_in_default_channel_help: 'Bạn đang nói chuyện ở kênh mặc định. Để chuyển sang kênh khác, hãy sử dụng lệnh của kênh đó.'
-tc_err_unable_to_talk_essentials_mute: 'Không thể nói chuyện...Hiện tại bạn đang tắt tiếng!'
-tc_err_unable_to_talk_you_are_spamming: 'Không thể nói chuyện...Bạn đang spam!'
+tc_err_invalid_command: "<font:eartopia:ui>\uE712</font> Lỗi: Lệnh không hợp lệ!"
+tc_settings_reloaded: "<font:eartopia:ui>\uE716</font> [TownyChat] Cài đặt đã được tải lại!"
+tc_err_unrecognized_command_format: "<font:eartopia:ui>\uE712</font> Lỗi: định dạng lệnh không được nhận dạng!"
+tc_channel_list_status: "<font:eartopia:ui>\uE722</font> (Trạng thái)"
+tc_channel_list_in: "<font:eartopia:ui>\uE722</font> Vào"
+tc_channel_list_out: "<font:eartopia:ui>\uE722</font> Ra"
+tc_err_you_dont_have_perm_mute_list: "<font:eartopia:ui>\uE712</font> Bạn không có quyền xem danh sách tắt tiếng"
+tc_err_you_dont_have_unmute_perm: "<font:eartopia:ui>\uE712</font> Bạn không có quyền bỏ tắt tiếng"
+tc_err_no_channel_called_channel: "<font:eartopia:ui>\uE712</font> Không có kênh nào có tên là &f%s"
+tc_err_no_muted_players_in_channel_players: "<font:eartopia:ui>\uE712</font> Không có người chơi nào bị tắt tiếng trong &f%s"
+tc_players_muted_in_channel: "<font:eartopia:ui>\uE722</font> [TownyChat] &f%n &2người chơi bị tắt tiếng trong &f%s&2: &f%s"
+tc_err_no_online_players_with_name: "<font:eartopia:ui>\uE712</font> Không có người chơi trực tuyến nào có tên &f%s"
+tc_err_you_dont_have_mute_perms: "<font:eartopia:ui>\uE712</font> Bạn không có đủ quyền để cấm mõm người khác"
+tc_err_you_cant_mute_admin: "<font:eartopia:ui>\uE712</font> Bạn không thể tắt tiếng người quản trị Towny."
+tc_err_you_cant_mute_chat_mod: "<font:eartopia:ui>\uE712</font> Bạn không thể tắt tiếng người điều hành cuộc trò chuyện."
+tc_player_already_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] Người chơi đã bị tắt tiếng trong &f%s"
+tc_player_is_now_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] &f%s &2hiện đã bị tắt tiếng trong &f%s"
+tc_player_is_not_muted_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] Người chơi không còn bị tắt tiếng trong &f%s"
+tc_player_is_now_unmuted_in_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] &f%s &2hiện đã được bỏ tắt tiếng trong &f%s"
+tc_err_you_are_currently_muted_in_channel: "<font:eartopia:ui>\uE712</font> Hiện tại bạn đang bị tắt tiếng trong &f%s&c!"
+tc_err_you_cannot_leave_channel: "<font:eartopia:ui>\uE712</font> Bạn không thể rời khỏi &f%s"
+tc_you_already_left_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] Bạn đã rời khỏi &f%s"
+tc_you_left_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] Bạn đã rời khỏi &f%s"
+tc_you_are_now_talking_in_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] Bây giờ bạn đang nói chuyện trong kênh &f%s"
+tc_err_you_cannot_join_channel: "<font:eartopia:ui>\uE712</font> Bạn không thể tham gia &f%s"
+tc_you_are_already_in_channel: "<font:eartopia:ui>\uE717</font> [TownyChat] Bạn đã ở trong &f%s"
+tc_you_joined_channel: "<font:eartopia:ui>\uE716</font> [TownyChat] Bạn đã tham gia &f%s"
+tc_err_you_are_already_talking_in_default_channel_help: "<font:eartopia:ui>\uE712</font> Bạn đang nói chuyện ở kênh mặc định. Để chuyển sang kênh khác, hãy sử dụng lệnh của kênh đó."
+tc_err_unable_to_talk_essentials_mute: "<font:eartopia:ui>\uE712</font> Không thể nói chuyện...Hiện tại bạn đang tắt tiếng!"
+tc_err_unable_to_talk_you_are_spamming: "<font:eartopia:ui>\uE712</font> Không thể nói chuyện...Bạn đang spam!"
 msg_admin_set_plot_help_1: 'Khi ở trong thị trấn.'
 msg_admin_set_plot_help_2: 'Khi ở nơi hoang dã.'
 msg_err_not_enough_outposts_free_to_claim: 'Không đủ tiền đồn để chiếm %s/%s'
@@ -1207,8 +1207,8 @@ msg_new_town_advice: 'Xin chúc mừng vì đã tạo thị trấn của bạn! 
 #Added in 0.81
 msg_err_teleport_cancelled_damage: 'Dính sát thương nên đã hủy bỏ dịch chuyển tức thời của bạn.'
 #Added in 0.82
-invitation_prefix: "&8[&7Lời mời&8] &9"
-confirmation_prefix: "&8[&7Xác nhận&8] &9"
+invitation_prefix: "&8[&7Lời mời&8] <font:eartopia:ui>\uE72C</font> &9"
+confirmation_prefix: "&8[&7Xác nhận&8] <font:eartopia:ui>\uE717</font> &9"
 this_message_will_expire2: '&9Điều này sẽ tự động hết hạn sau %s giây'
 msg_hover_next_page: 'Trang Tiếp Theo'
 msg_hover_previous_page: 'Trang Trước'
@@ -1684,8 +1684,8 @@ msg_baltop_book_format: '%s. %s | %s'
 #Message shown when a confirmation times out.
 msg_confirmation_timed_out: 'Đã hết thời gian xác nhận.'
 #Added in 0.134
-tc_player_channel_sound_muted: 'Âm thanh kênh đã bị tắt tiếng'
-tc_player_channel_sound_unmuted: 'Âm thanh kênh đã được bỏ tắt tiếng'
+tc_player_channel_sound_muted: "<font:eartopia:ui>\uE717</font> Âm thanh kênh đã bị tắt tiếng"
+tc_player_channel_sound_unmuted: "<font:eartopia:ui>\uE716</font> Âm thanh kênh đã được bỏ tắt tiếng"
 #Added in 0.135
 msg_cant_toggle_pvp_outsider_in_plot: 'Có một người ngoài cuộc trong lô đất của bạn, bạn không thể thay đổi trạng thái pvp của mình!'
 #Added in 0.136
@@ -2123,6 +2123,12 @@ description: 'Tệp ngôn ngữ cho toàn bộ thông báo trong game của Loca
 default_towny_prefix: '&6[Towny] &b'
 default_town_prefix: '&6[%s] &b'
 default_nation_prefix: '&6[%s] &6'
+eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
+eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
+eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
+eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
+eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
+eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
 town_help_36: 'Liệt kê các thị trấn lân cận được sắp xếp theo khoảng cách.'
 nation_help_19: 'Được sử dụng để dịch chuyển đến các tiền đồn thuộc sở hữu của các thị trấn trong quốc gia của bạn.'
 res_8: 'Chỉ là một người nông dân khiêm tốn'

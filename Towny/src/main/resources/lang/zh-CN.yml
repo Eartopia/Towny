@@ -28,6 +28,12 @@ website: 'https://townyadvanced.github.io/'
 #and formatting. Learn about MiniMessage formatting here:
 #https://docs.adventure.kyori.net/minimessage/format.html
 default_towny_prefix: '&6[Towny] &b'
+eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
+eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
+eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
+eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
+eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
+eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
 unclaimed_plot_name: '无主之地'
 unclaimed_zone_name: '荒郊野地'
 ############################################################
@@ -860,36 +866,36 @@ msg_err_homeblock_has_not_been_set: '尚未设置城镇之家, 使用 ''/town se
 msg_err_spawn_not_within_homeblock: '传送点不在 homeBlock, 使用 ''/town set homeblock'' 设置.'
 #Added in 0.44
 #TownyChat language strings
-tc_err_invalid_command: '错误: 无效的命令!'
-tc_settings_reloaded: '[城镇聊天] 已重制聊天配置!'
-tc_err_unrecognized_command_format: '错误: 无法识别的命令格式!'
-tc_channel_list_status: '(状态)'
-tc_channel_list_in: '加入'
-tc_channel_list_out: '退出'
-tc_err_you_dont_have_perm_mute_list: '您没有权限查看禁言列表'
-tc_err_you_dont_have_unmute_perm: '您没有解除禁言的权限'
-tc_err_no_channel_called_channel: '没有名为&f%s的频道'
-tc_err_no_muted_players_in_channel_players: '解除禁言玩家 &f%s'
-tc_players_muted_in_channel: '[城镇聊天] &f%n &2玩家被禁言了 &f%s&2: &f%s'
-tc_err_no_online_players_with_name: '没有在线玩家名为&f%s'
-tc_err_you_dont_have_mute_perms: '您没有禁言权限'
-tc_err_you_cant_mute_admin: '你不能禁言一个城镇管理员.'
-tc_err_you_cant_mute_chat_mod: '你不能禁言聊天管理者.'
-tc_player_already_muted_in_channel: '[城镇聊天] 玩家在 &f%s 频道内被禁言'
-tc_player_is_now_muted_in_channel: '[城镇聊天] &f%s &2禁言了 &f%s'
-tc_player_is_not_muted_in_channel: '[城镇聊天] 玩家没有在&f%s被禁言'
-tc_player_is_now_unmuted_in_channel: '[城镇聊天] &f%s &2目前不在 &f%s'
-tc_err_you_are_currently_muted_in_channel: '你目前处于禁言状态 &f%s&c!'
-tc_err_you_cannot_leave_channel: '你不能离开 &f%s'
-tc_you_already_left_channel: '[城镇聊天] 你已经离开了 &f%s'
-tc_you_left_channel: '[城镇聊天] 你离开了 &f%s'
-tc_you_are_now_talking_in_channel: '[城镇聊天] 你正在说话 &f%s'
-tc_err_you_cannot_join_channel: '你不能加入 &f%s'
-tc_you_are_already_in_channel: '[城镇聊天] 你已经在 &f%s'
-tc_you_joined_channel: '[城镇聊天] 你加入了 &f%s'
-tc_err_you_are_already_talking_in_default_channel_help: '你已经在默认频道聊天 使用该频道的命令切换到另一个频道.'
-tc_err_unable_to_talk_essentials_mute: '你不能说话...因为你被禁言了！'
-tc_err_unable_to_talk_you_are_spamming: '住口...你刷屏了!'
+tc_err_invalid_command: "<font:eartopia:ui>\uE712</font> 错误: 无效的命令!"
+tc_settings_reloaded: "<font:eartopia:ui>\uE716</font> [城镇聊天] 已重制聊天配置!"
+tc_err_unrecognized_command_format: "<font:eartopia:ui>\uE712</font> 错误: 无法识别的命令格式!"
+tc_channel_list_status: "<font:eartopia:ui>\uE722</font> (状态)"
+tc_channel_list_in: "<font:eartopia:ui>\uE722</font> 加入"
+tc_channel_list_out: "<font:eartopia:ui>\uE722</font> 退出"
+tc_err_you_dont_have_perm_mute_list: "<font:eartopia:ui>\uE712</font> 您没有权限查看禁言列表"
+tc_err_you_dont_have_unmute_perm: "<font:eartopia:ui>\uE712</font> 您没有解除禁言的权限"
+tc_err_no_channel_called_channel: "<font:eartopia:ui>\uE712</font> 没有名为&f%s的频道"
+tc_err_no_muted_players_in_channel_players: "<font:eartopia:ui>\uE712</font> 解除禁言玩家 &f%s"
+tc_players_muted_in_channel: "<font:eartopia:ui>\uE722</font> [城镇聊天] &f%n &2玩家被禁言了 &f%s&2: &f%s"
+tc_err_no_online_players_with_name: "<font:eartopia:ui>\uE712</font> 没有在线玩家名为&f%s"
+tc_err_you_dont_have_mute_perms: "<font:eartopia:ui>\uE712</font> 您没有禁言权限"
+tc_err_you_cant_mute_admin: "<font:eartopia:ui>\uE712</font> 你不能禁言一个城镇管理员."
+tc_err_you_cant_mute_chat_mod: "<font:eartopia:ui>\uE712</font> 你不能禁言聊天管理者."
+tc_player_already_muted_in_channel: "<font:eartopia:ui>\uE717</font> [城镇聊天] 玩家在 &f%s 频道内被禁言"
+tc_player_is_now_muted_in_channel: "<font:eartopia:ui>\uE717</font> [城镇聊天] &f%s &2禁言了 &f%s"
+tc_player_is_not_muted_in_channel: "<font:eartopia:ui>\uE717</font> [城镇聊天] 玩家没有在&f%s被禁言"
+tc_player_is_now_unmuted_in_channel: "<font:eartopia:ui>\uE716</font> [城镇聊天] &f%s &2目前不在 &f%s"
+tc_err_you_are_currently_muted_in_channel: "<font:eartopia:ui>\uE712</font> 你目前处于禁言状态 &f%s&c!"
+tc_err_you_cannot_leave_channel: "<font:eartopia:ui>\uE712</font> 你不能离开 &f%s"
+tc_you_already_left_channel: "<font:eartopia:ui>\uE717</font> [城镇聊天] 你已经离开了 &f%s"
+tc_you_left_channel: "<font:eartopia:ui>\uE716</font> [城镇聊天] 你离开了 &f%s"
+tc_you_are_now_talking_in_channel: "<font:eartopia:ui>\uE716</font> [城镇聊天] 你正在说话 &f%s"
+tc_err_you_cannot_join_channel: "<font:eartopia:ui>\uE712</font> 你不能加入 &f%s"
+tc_you_are_already_in_channel: "<font:eartopia:ui>\uE717</font> [城镇聊天] 你已经在 &f%s"
+tc_you_joined_channel: "<font:eartopia:ui>\uE716</font> [城镇聊天] 你加入了 &f%s"
+tc_err_you_are_already_talking_in_default_channel_help: "<font:eartopia:ui>\uE712</font> 你已经在默认频道聊天 使用该频道的命令切换到另一个频道."
+tc_err_unable_to_talk_essentials_mute: "<font:eartopia:ui>\uE712</font> 你不能说话...因为你被禁言了！"
+tc_err_unable_to_talk_you_are_spamming: "<font:eartopia:ui>\uE712</font> 住口...你刷屏了!"
 msg_admin_set_plot_help_1: '在城镇内.'
 msg_admin_set_plot_help_2: '在荒郊野外.'
 msg_err_not_enough_outposts_free_to_claim: '没有足够的前哨可用于声明 %s/%s'
@@ -1248,8 +1254,8 @@ msg_new_town_advice: '恭喜你创建了自己的城镇！您的城镇将需要�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '传送因受到了伤害而取消。'
 #Added in 0.82
-invitation_prefix: "&8[&7邀请&8] &9"
-confirmation_prefix: "&8[&7确认&8] &9"
+invitation_prefix: "&8[&7邀请&8] <font:eartopia:ui>\uE72C</font> &9"
+confirmation_prefix: "&8[&7确认&8] <font:eartopia:ui>\uE717</font> &9"
 this_message_will_expire2: '&9这将会在%s秒后过期。'
 msg_hover_next_page: '下一页'
 msg_hover_previous_page: '上一页'
@@ -1735,8 +1741,8 @@ msg_baltop_book_format: '%s. %s | %s'
 #Message shown when a confirmation times out.
 msg_confirmation_timed_out: '请求确认已超时。'
 #Added in 0.134
-tc_player_channel_sound_muted: '频道已静音'
-tc_player_channel_sound_unmuted: '频道已解除静音'
+tc_player_channel_sound_muted: "<font:eartopia:ui>\uE717</font> 频道已静音"
+tc_player_channel_sound_unmuted: "<font:eartopia:ui>\uE716</font> 频道已解除静音"
 #Added in 0.135
 msg_cant_toggle_pvp_outsider_in_plot: '有外来者在你的领地上，你不能切换PVP状态！'
 #Added in 0.136
