@@ -7,8 +7,12 @@ public class TownyUpdateChecker {
 	private static boolean update = false;
 	private static boolean checkedSuccessfully = false;
 	private static Version newVersion;
-	
+
 	public static void checkForUpdates(Towny towny) {
+		// Reuse the notification toggle to skip the GitHub lookup entirely when admins opt out.
+		if (!TownySettings.isShowingUpdateNotifications())
+			return;
+
 		towny.getScheduler().runAsync(new UpdateCheckerTask(towny));
 	}
 
@@ -27,11 +31,11 @@ public class TownyUpdateChecker {
 	public static Version getNewVersion() {
 		return newVersion;
 	}
-	
+
 	public static String getUpdateURL() {
 		if (newVersion == null)
 			return "";
-		
+
 		return "https://github.com/TownyAdvanced/Towny/releases/tag/" + newVersion;
 	}
 
@@ -42,11 +46,11 @@ public class TownyUpdateChecker {
 	public static boolean hasCheckedSuccessfully() {
 		return checkedSuccessfully;
 	}
-	
+
 	public static boolean shouldShowNotification() {
 		if (!TownySettings.isShowingUpdateNotifications() || !TownyUpdateChecker.hasUpdate())
 			return false;
-		
+
 		Version currentVersion = Version.fromString(Towny.getPlugin().getVersion());
 		if (currentVersion.isPreRelease())
 			return true;
@@ -54,7 +58,7 @@ public class TownyUpdateChecker {
 		if (TownySettings.isUpdateNotificationsMajorOnly()) {
 			return !newVersion.isPreRelease();
 		}
-		
+
 		return true;
 	}
 }
