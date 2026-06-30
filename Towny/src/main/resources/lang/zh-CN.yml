@@ -28,12 +28,12 @@ website: 'https://townyadvanced.github.io/'
 #and formatting. Learn about MiniMessage formatting here:
 #https://docs.adventure.kyori.net/minimessage/format.html
 default_towny_prefix: '&6[Towny] &b'
-eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
-eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
-eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
-eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
-eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
-eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
+eartopia_icon_notice: "<reset><font:eartopia:ui>\uE721</font><reset>"
+eartopia_icon_success: "<reset><font:eartopia:ui>\uE716</font><reset>"
+eartopia_icon_error: "<reset><font:eartopia:ui>\uE712</font><reset>"
+eartopia_icon_warning: "<reset><font:eartopia:ui>\uE717</font><reset>"
+eartopia_icon_town: "<reset><font:eartopia:ui>\uE720</font><reset>"
+eartopia_icon_nation: "<reset><font:eartopia:ui>\uE72C</font><reset>"
 unclaimed_plot_name: '无主之地'
 unclaimed_zone_name: '荒郊野地'
 ############################################################
@@ -603,8 +603,8 @@ msg_set_town_tag: '&b%s 将城镇简称设置为 [%s]'
 msg_reset_nation_tag: '&b%s 清除了国家简称.'
 msg_reset_town_tag: '&b%s 清除了城镇简称.'
 msg_mayor_abandon: '&b你真的要舍弃你的人民吗? 如果你真的想这么做,用 /town set mayor 来将城主之位让给其他人吧.'
-msg_new_day_tax: '&b美好的一天又开始了! 税款租金收缴完毕'
-msg_new_day: '&b美好的一天又开始了!'
+msg_new_day_tax: '<gradient:#9bd8cf:#e6edf0>新的一天开始了！税款和租金已收取。</gradient>'
+msg_new_day: '<gradient:#9bd8cf:#e6edf0>新的一天开始了！</gradient>'
 msg_new_king: '&b%s 现在是 %s 的国家领导者！'
 msg_err_new_king_notmayor: '&c新的国家领导者不是市长。'
 msg_err_king_not_in_nation: '&c新的国家领导者不属于这个国家。'
@@ -1254,8 +1254,8 @@ msg_new_town_advice: '恭喜你创建了自己的城镇！您的城镇将需要�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '传送因受到了伤害而取消。'
 #Added in 0.82
-invitation_prefix: "&8[&7邀请&8] <font:eartopia:ui>\uE72C</font> &9"
-confirmation_prefix: "&8[&7确认&8] <font:eartopia:ui>\uE717</font> &9"
+invitation_prefix: "&8[&7邀请&8] <reset><font:eartopia:ui>\uE72C</font><reset> &9"
+confirmation_prefix: "&8[&7确认&8] <reset><font:eartopia:ui>\uE717</font><reset> &9"
 this_message_will_expire2: '&9这将会在%s秒后过期。'
 msg_hover_next_page: '下一页'
 msg_hover_previous_page: '上一页'

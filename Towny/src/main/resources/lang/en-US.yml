@@ -46,12 +46,12 @@ description: Language file for all game messages for this Locale.
 default_towny_prefix: '&6[Towny] &b'
 default_town_prefix: '&6[%s] &b'
 default_nation_prefix: '&6[%s] &6'
-eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
-eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
-eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
-eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
-eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
-eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
+eartopia_icon_notice: "<reset><font:eartopia:ui>\uE721</font><reset>"
+eartopia_icon_success: "<reset><font:eartopia:ui>\uE716</font><reset>"
+eartopia_icon_error: "<reset><font:eartopia:ui>\uE712</font><reset>"
+eartopia_icon_warning: "<reset><font:eartopia:ui>\uE717</font><reset>"
+eartopia_icon_town: "<reset><font:eartopia:ui>\uE720</font><reset>"
+eartopia_icon_nation: "<reset><font:eartopia:ui>\uE72C</font><reset>"
 
 unclaimed_plot_name: 'Unowned'
 unclaimed_zone_name: 'Wilderness'
@@ -696,8 +696,8 @@ msg_reset_nation_tag: '&b%s has cleared the nation tag.'
 msg_reset_town_tag: '&b%s has cleared the town tag.'
 
 msg_mayor_abandon: '&bYou would abandon your people? Choose another mayor with ''/town set mayor'' if you''re sure.'
-msg_new_day_tax: '&bA new day is here! Taxes and rent have been collected'
-msg_new_day: '&bA new day is here!'
+msg_new_day_tax: '<gradient:#9bd8cf:#e6edf0>A new day has started! Taxes and rent have been collected.</gradient>'
+msg_new_day: '<gradient:#9bd8cf:#e6edf0>A new day has started!</gradient>'
 msg_new_king: '&b%s is now the nation leader of %s!'
 msg_err_new_king_notmayor: '&cNew nation leader is not a mayor.'
 msg_err_king_not_in_nation: '&cNew nation leader doesn''t belong to this nation.'
@@ -1437,8 +1437,8 @@ msg_new_town_advice: 'Congratulations on creating your town! Your town will pay 
 msg_err_teleport_cancelled_damage: 'Damage has cancelled your teleport.'
 
 # Added in 0.82
-invitation_prefix: "&8[&7Invitation&8] <font:eartopia:ui>\uE72C</font> &9"
-confirmation_prefix: "&8[&7Confirmation&8] <font:eartopia:ui>\uE717</font> &9"
+invitation_prefix: "&8[&7Invitation&8] <reset><font:eartopia:ui>\uE72C</font><reset> &9"
+confirmation_prefix: "&8[&7Confirmation&8] <reset><font:eartopia:ui>\uE717</font><reset> &9"
 this_message_will_expire2: '&9This will auto-expire in %s seconds'
 msg_hover_next_page: 'Next Page'
 msg_hover_previous_page: 'Previous Page'

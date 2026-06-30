@@ -28,12 +28,12 @@ website: 'https://townyadvanced.github.io/'
 #and formatting. Learn about MiniMessage formatting here:
 #https://docs.adventure.kyori.net/minimessage/format.html
 default_towny_prefix: '&6[Towny]&b'
-eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
-eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
-eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
-eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
-eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
-eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
+eartopia_icon_notice: "<reset><font:eartopia:ui>\uE721</font><reset>"
+eartopia_icon_success: "<reset><font:eartopia:ui>\uE716</font><reset>"
+eartopia_icon_error: "<reset><font:eartopia:ui>\uE712</font><reset>"
+eartopia_icon_warning: "<reset><font:eartopia:ui>\uE717</font><reset>"
+eartopia_icon_town: "<reset><font:eartopia:ui>\uE720</font><reset>"
+eartopia_icon_nation: "<reset><font:eartopia:ui>\uE72C</font><reset>"
 unclaimed_plot_name: '空地'
 unclaimed_zone_name: '荒地'
 ############################################################
@@ -599,8 +599,8 @@ msg_set_town_tag: '&b%s將市鎮標籤設定為 [%s]'
 msg_reset_nation_tag: '&b%s清除了城邦標籤 '
 msg_reset_town_tag: '&b%s清除了市鎮標籤 '
 msg_mayor_abandon: '&b你真的要放棄你的人民嗎? 如果你真的想這麽做，用 /town set mayor 來將市長讓給其他人吧！'
-msg_new_day_tax: '&b美好的一天又開始了！稅收已繳納'
-msg_new_day: '&b美好的一天又開始了！'
+msg_new_day_tax: '<gradient:#9bd8cf:#e6edf0>新的一天開始了！稅款與租金已收取。</gradient>'
+msg_new_day: '<gradient:#9bd8cf:#e6edf0>新的一天開始了！</gradient>'
 msg_new_king: '&b%s現已成為%s的元首 '
 msg_err_new_king_notmayor: '&c新國家領導人不是市長。'
 msg_err_king_not_in_nation: '&c新國家領導人不屬於這個國家。'
@@ -1244,8 +1244,8 @@ msg_new_town_advice: '恭喜你新建了你的市鎮！你所在的市鎮將支�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '突發狀況已取消你的傳送 '
 #Added in 0.82
-invitation_prefix: "&8[&7邀請&8] <font:eartopia:ui>\uE72C</font> &9"
-confirmation_prefix: "&8[&7確認&8] <font:eartopia:ui>\uE717</font> &9"
+invitation_prefix: "&8[&7邀請&8] <reset><font:eartopia:ui>\uE72C</font><reset> &9"
+confirmation_prefix: "&8[&7確認&8] <reset><font:eartopia:ui>\uE717</font><reset> &9"
 this_message_will_expire2: '&9於%s秒後自動過期'
 msg_hover_next_page: '下一頁'
 msg_hover_previous_page: '上一頁'

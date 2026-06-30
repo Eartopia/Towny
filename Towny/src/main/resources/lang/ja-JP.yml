@@ -562,8 +562,8 @@ msg_set_town_tag: '&b%s は町のタグを [%s] に設定しました'
 msg_reset_nation_tag: '&b%s は国のタグをリセットしました'
 msg_reset_town_tag: '&b%s は町のタグをリセットしました'
 msg_mayor_abandon: '&b本当に支持者を見捨てるのですか？もし本当にするのであれば、「/town set mayer」コマンドで別の市長を選んでください'
-msg_new_day_tax: '&b新しい日がやってきました！税金と家賃を集金しました'
-msg_new_day: '&b新しい日がやってきました！'
+msg_new_day_tax: '<gradient:#9bd8cf:#e6edf0>新しい一日が始まりました！税金と賃料を集めました。</gradient>'
+msg_new_day: '<gradient:#9bd8cf:#e6edf0>新しい一日が始まりました！</gradient>'
 msg_new_king: '&b%s は現在 %s の国のリーダーです！'
 msg_err_new_king_notmayor: '&c新しい国家のリーダーは市長ではありません。'
 msg_err_king_not_in_nation: '&cこの国のリーダーはこの国に属していません。'
@@ -1203,8 +1203,8 @@ msg_new_town_advice: 'あなたの町が作成されました。あなたの町�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '攻撃されたことによりテレポートがキャンセルされました。'
 #Added in 0.82
-invitation_prefix: "&8[&7招待&8] <font:eartopia:ui>\uE72C</font> &9"
-confirmation_prefix: "&8[&7確認&8] <font:eartopia:ui>\uE717</font> &9"
+invitation_prefix: "&8[&7招待&8] <reset><font:eartopia:ui>\uE72C</font><reset> &9"
+confirmation_prefix: "&8[&7確認&8] <reset><font:eartopia:ui>\uE717</font><reset> &9"
 this_message_will_expire2: '&9%s秒後に自動で削除されます。'
 msg_hover_next_page: '次のページ'
 msg_hover_previous_page: '前のページ'
@@ -2125,12 +2125,12 @@ description: 'このLocaleで使うすべてのゲーム内メッセージの言
 default_towny_prefix: '&6[Towny] &b'
 default_town_prefix: '&6[%s] &b'
 default_nation_prefix: '&6[%s] &6'
-eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
-eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
-eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
-eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
-eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
-eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
+eartopia_icon_notice: "<reset><font:eartopia:ui>\uE721</font><reset>"
+eartopia_icon_success: "<reset><font:eartopia:ui>\uE716</font><reset>"
+eartopia_icon_error: "<reset><font:eartopia:ui>\uE712</font><reset>"
+eartopia_icon_warning: "<reset><font:eartopia:ui>\uE717</font><reset>"
+eartopia_icon_town: "<reset><font:eartopia:ui>\uE720</font><reset>"
+eartopia_icon_nation: "<reset><font:eartopia:ui>\uE72C</font><reset>"
 town_help_36: '近くの町を距離順にリストします。'
 nation_help_19: 'あなたの国の町が所有する前哨基地にテレポートするために使用されます。'
 res_8: 'ただの謙虚な農家'

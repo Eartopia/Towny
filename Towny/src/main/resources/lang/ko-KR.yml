@@ -28,12 +28,12 @@ author: Daybreak 새벽
 #and formatting. Learn about MiniMessage formatting here:
 #https://docs.adventure.kyori.net/minimessage/format.html
 default_towny_prefix: '&6[타우니] &b'
-eartopia_icon_notice: "<font:eartopia:ui>\uE721</font>"
-eartopia_icon_success: "<font:eartopia:ui>\uE716</font>"
-eartopia_icon_error: "<font:eartopia:ui>\uE712</font>"
-eartopia_icon_warning: "<font:eartopia:ui>\uE717</font>"
-eartopia_icon_town: "<font:eartopia:ui>\uE720</font>"
-eartopia_icon_nation: "<font:eartopia:ui>\uE72C</font>"
+eartopia_icon_notice: "<reset><font:eartopia:ui>\uE721</font><reset>"
+eartopia_icon_success: "<reset><font:eartopia:ui>\uE716</font><reset>"
+eartopia_icon_error: "<reset><font:eartopia:ui>\uE712</font><reset>"
+eartopia_icon_warning: "<reset><font:eartopia:ui>\uE717</font><reset>"
+eartopia_icon_town: "<reset><font:eartopia:ui>\uE720</font><reset>"
+eartopia_icon_nation: "<reset><font:eartopia:ui>\uE72C</font><reset>"
 unclaimed_plot_name: '소유자 없음'
 unclaimed_zone_name: '야생'
 ############################################################
@@ -355,8 +355,8 @@ msg_set_town_tag: '&b%s 마을 태그가 %s(으)로 설정되었습니다.'
 msg_reset_nation_tag: '&b%s 국가의 태그가 초기화되었습니다.'
 msg_reset_town_tag: '&b%s 마을의 태그가 초기화되었습니다.'
 msg_mayor_abandon: '&b정말 마을 주민들을 버릴 생각이신가요? 확실하다면 /town set mayor <주민> 으로 다음 촌장을 정하십시오.'
-msg_new_day_tax: '&b새로운 하루가 시작되었습니다! 세금이 거둬집니다.'
-msg_new_day: '&b새로운 하루가 시작되었습니다!'
+msg_new_day_tax: '<gradient:#9bd8cf:#e6edf0>새로운 하루가 시작되었습니다! 세금이 거둬집니다.</gradient>'
+msg_new_day: '<gradient:#9bd8cf:#e6edf0>새로운 하루가 시작되었습니다!</gradient>'
 msg_new_king: '&b%s이(가) 이제 국가 %s의 리더입니다!'
 msg_err_new_king_notmayor: '&c새 국가 리더가 시장이 아닙니다.'
 msg_err_king_not_in_nation: '&c새 국가 리더가 이 국가에 소속되어있지 않습니다.'
@@ -969,8 +969,8 @@ msg_new_town_advice: '마을을 생성하신 것을 축하합니다! 현재 당�
 #Added in 0.81
 msg_err_teleport_cancelled_damage: '공격을 받아서 이동이 취소되었습니다.'
 #Added in 0.82
-invitation_prefix: "&8[&7초대&8] <font:eartopia:ui>\uE72C</font> &9"
-confirmation_prefix: "&8[&7확인&8] <font:eartopia:ui>\uE717</font> &9"
+invitation_prefix: "&8[&7초대&8] <reset><font:eartopia:ui>\uE72C</font><reset> &9"
+confirmation_prefix: "&8[&7확인&8] <reset><font:eartopia:ui>\uE717</font><reset> &9"
 this_message_will_expire2: '이것은 자동으로 %s초 후에 만료 됩니다.'
 msg_hover_next_page: '다음 페이지'
 msg_hover_previous_page: '이전 페이지'
